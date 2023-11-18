@@ -1,0 +1,49 @@
+body {
+	background-color: rgb(0, 0, 0);
+	color: whitesmoke;
+}
+
+h1 {
+	text-align: center;
+	color: rgb(22, 174, 201);
+	margin-left: 20px;
+}
+
+p {
+	text-indent: 50px;
+	font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+
+  footer {
+	background-color: #2e2929;
+	padding: 10px;
+	text-align: center;
+	color: white;
+  }
+  
+
+ /* unvisited link */
+ a:link {
+	color: red;
+	font-family: "Lucida Console", "Courier New", monospace;
+	/*background-color: rgb(255, 145, 0);*/
+  }
+  
+  /* visited link */
+  a:visited {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: rgb(6, 214, 6);
+  }
+  
+  /* mouse over link */
+  a:hover {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: blue;
+  } 
