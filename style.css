@@ -70,3 +70,11 @@ ul{
 	font-family: "Lucida Console", "Courier New", monospace;
   font-style: italic;
 }
+
+article{
+  padding: 3px;
+  background-color: #201e1e;
+  border: 1px solid green;
+  border-radius: 10px;
+  
+}
