@@ -1,139 +1,39 @@
-<?php
+<?php // @codingStandardsIgnoreFile
+/**
+ * This file is part of Pico. It's copyrighted by the contributors recorded
+ * in the version control history of the file, available from the following
+ * original location:
+ *
+ * <https://github.com/picocms/Pico/blob/master/index.php.dist>
+ *
+ * SPDX-License-Identifier: MIT
+ * License-Filename: LICENSE
+ */
 
-// Explicitly including the dispatch framework,
-// and our functions.php file
-require 'app/includes/dispatch.php';
-require 'app/includes/functions.php';
+// check PHP platform requirements
+if (PHP_VERSION_ID < 50306) {
+    die('Pico requires PHP 5.3.6 or above to run');
+}
+if (!extension_loaded('dom')) {
+    die("Pico requires the PHP extension 'dom' to run");
+}
+if (!extension_loaded('mbstring')) {
+    die("Pico requires the PHP extension 'mbstring' to run");
+}
 
-// Load the configuration file
-config('source', 'app/config.ini');
+// load dependencies
+require_once(__DIR__ . '/vendor/autoload.php');
 
-// The front page of the blog.
-// This will match the root url
-get('/index', function () {
+// instance Pico
+$pico = new Pico(
+    __DIR__,    // root dir
+    'config/',  // config dir
+    'plugins/', // plugins dir
+    'themes/'   // themes dir
+);
 
-	$page = from($_GET, 'page');
-	$page = $page ? (int)$page : 1;
+// override configuration?
+//$pico->setConfig(array());
 
-	$posts = get_posts($page);
-
-	if(empty($posts) || $page < 1){
-		// a non-existing page
-		not_found();
-	}
-
-    render('main',array(
-    	'page' => $page,
-		'posts' => $posts,
-		'has_pagination' => has_pagination($page)
-	));
-});
-
-// The blog apart
-get('/blog', function () {
-
-	$page = from($_GET, 'page');
-	$page = $page ? (int)$page : 1;
-
-	$posts = get_posts($page);
-
-	if(empty($posts) || $page < 1){
-		// a non-existing page
-		not_found();
-	}
-
-    render('main',array(
-    	'page' => $page,
-		'posts' => $posts,
-		'has_pagination' => has_pagination($page)
-	));
-});
-
-
-// Show the RSS feed 
-get('/rss',function(){
-   $posts = get_posts(1,5);
-   generate_rss($posts);
-   header('Location:feed.xml');
-   exit();
-});
-
-get('/feed', function(){
-	$posts = get_posts(1, 5);
-	generate_rss($posts);
-	header('Location:feed.xml');
-	exit();
-
-});
-
-// The static page
-get('/:static',function($static){
-
-	$page = find_page($static);
-
-	if(!$page){
-		not_found();
-	}
-	render('page',array(
-			'title' => $page->title .' ⋅ ' . config('blog.title'),
-			'p' => $page
-	));
-
-
-});
-
-// The post page
-get('/:year/:month/:name',function($year, $month, $name){
-
-	$post = find_post($year, $month, $name);
-
-	if(!$post){
-		not_found();
-	}
-
-	render('post',array(
-		'title' => $post->title .' ⋅ ' . config('blog.title'),
-		'p' => $post
-	));
-});
-
-//Rendering a tag (appliable to posts)
-get('/tag/:tag',function($tagtosearch){
-
-        //$archive = search_tag($tagtosearch);
-        //var_dump($archive);
-        //die;
-
-        //if(count($archive) === 0){
-        //        not_found();
-        //}
-        render('archive', array(
-                'tag' => $tagtosearch,
-                'title' => 'Etiqueta: ' . $tagtosearch .' · '. config('blog.title'),
-                'archive' => $archive
-
-        ));
-        //echo search_tag($tagtosearch);
-});
-
-// The JSON API
-get('/api/json',function(){
-
-	header('Content-type: application/json');
-
-	// Print the 10 latest posts as JSON
-	echo generate_json(get_posts(1, 10));
-});
-
-
-
-
-// If we get here, it means that
-// nothing has been matched above
-
-get('.*',function(){
-	not_found();
-});
-
-// Serve the blog
-dispatch();
+// run application
+echo $pico->run();
