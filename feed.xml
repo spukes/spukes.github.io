@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+ <channel>
+  <title>Portabloc</title>
+  <link>https://portabloc.local/</link>
+  <description>A tiny CMS for creative coders</description>
+  <language>es</language>
+  <lastBuildDate>Fri, 10 Nov 2023 13:48:18 +0100</lastBuildDate>
+  <image>
+   <url>https://pabs.xyz/media/sloth.jpg</url>
+   <width>16</width>
+   <height>16</height>
+   <title>Portabloc</title>
+   <link>https://portabloc.local/</link>
+  </image>
+  <item>
+   <title>Gemini. A digital Walden</title>
+   <link>https://portabloc.local/2023/11/gemini-a-digital-walden</link>
+   <pubDate>Fri, 10 Nov 2023 00:00:00 +0100</pubDate>
+   <description>
+&lt;p&gt;#gemini #smallweb&lt;/p&gt;
+&lt;p&gt;This is a post with Gemini syntax.&lt;/p&gt;
+&lt;img src=&quot;../../media/gemini.png&quot; alt=&quot;../../media/gemini.png&quot;&gt;
+&lt;p&gt;Gemini is a lightweight, text-based protocol that prioritizes content over flashy design. It embraces simplicity and aims to provide a distraction-free browsing experience. Similar to Thoreau's &amp;quot;Walden,&amp;quot; which celebrated the beauty of nature and a simpler way of life, Gemini encourages users to disconnect from the noise and clutter of the modern web and focus on the content that truly matters.&lt;/p&gt;
+&lt;p&gt;And it renders to HTML as well as Markdown does.&lt;/p&gt;
+&lt;ol start=&quot;1&quot;&gt;
+&lt;li&gt;It renders lists&lt;/li&gt;
+&lt;li&gt;It renders blockquotes&lt;/li&gt;
+&lt;li&gt;It renders links&lt;/li&gt;
+&lt;li&gt;It renders linked images as well&lt;/li&gt;
+&lt;li&gt;And of course, preformatted text for your code snippets&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;Less is more.&lt;/blockquote&gt;
+&lt;a href=&quot;https://geminiprotocol.net/docs/gemtext.gmi&quot; rel=&quot;noreferrer&quot;&gt;A quick introduction to &amp;quot;gemtext&amp;quot; markup&lt;/a&gt;
+&lt;p&gt;Let's see an example:&lt;/p&gt;
+&lt;pre&gt;
+And it renders to HTML as Markdown does.
+
+* It renders lists
+* It renders blockquotes
+* It renders links
+* It renders linked images as well
+* And of course, preformatted text for your code snippets
+
+&amp;gt; ¿Qué más quieres, Baldomero?
+
+=&amp;gt; https://geminiprotocol.net/docs/gemtext.gmi  A quick introduction to &amp;quot;gemtext&amp;quot; markup
+&lt;/pre&gt;
+</description>
+  </item>
+  <item>
+   <title>Hola Mundo</title>
+   <link>https://portabloc.local/2023/11/hola-mundo</link>
+   <pubDate>Fri, 03 Nov 2023 00:00:00 +0100</pubDate>
+   <description>
+&lt;p&gt;&lt;img src=&quot;../../media/sloth.jpg&quot; alt=&quot;Sloth&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This is your first post. These first lines will be displayed as an excerpt if you have opted to. Just set the option to true in the config.ini&lt;/p&gt;
+&lt;p&gt;Take your time and enjoy writing!&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;h3&gt;Toki!&lt;/h3&gt;
+&lt;p&gt;pana jaki wan o, vi anu nimi sona awen. olin nimi selo n sep. pilin nanpa mun vi. oth ma open kute sike, kasi sona weka ijo e.&lt;/p&gt;
+&lt;p&gt;vi jan kasi lawa sitelen, li len anpa sona, mun mi poka linja. ijo lupa poka o. anu ko pipi suli pini. ona mama nanpa o, pipi nasin ijo ma.&lt;/p&gt;
+&lt;p&gt;musi awen jan jo, en uta weka sitelen. ijo anpa sewi o, mod en mama kepeken. e jaki nimi utala anu, len poki selo li, ona n toki sitelen. tu anu jaki pimeja, suno pona suwi jan n. en pipi poka utala oth, poka sike kulupu mu ona. kasi sike akesi sep ko.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&amp;lt;?php 
+$language = 'Toki pona';
+echo $language; 
+var_dump($language);
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;jo nimi kute ijo, oko ko pipi pimeja, en telo pakala ijo. &lt;strong&gt;sep lete cont pimeja n, ale sike akesi mu&lt;/strong&gt;. e nena suwi oth, wawa tenpo ken pi. vi anu nimi kute akesi. ken o sike sona, oth ma suwi wawa nanpa.&lt;/p&gt;
+&lt;p&gt;kute poka ante ijo mi, ale kule kama suwi jo, ko uta open anpa. ali pali sama en. luka awen mod tu, ijo li olin awen. uta kala pini sitelen pi. noka suno akesi ike ko, kute waso palisa tu jan, uta lipu loje vi.&lt;/p&gt;
+&lt;p&gt;e tan pana suwi. ijo ko mije sewi monsi. li pali nasa tenpo len, ken mu olin luka. noka sama jo mun, musi conj moli kin n. telo anpa e oth, suno mama moli n jan.&lt;/p&gt;
+&lt;p&gt;kasi sina en wan, ma oko pali sina selo, ona ni musi pini. ona insa nasin jo, nimi pimeja wan mu. li ken pana mama sina, luka moli ni uta, len o telo anpa. mu mama wawa sep, jan seme kute seli ni, ko ali pona walo. kala nasin lukin tu jan.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../media/telex.jpg&quot; alt=&quot;Telex&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;nimi wawa linja ike en, toki sona tenpo en sep. suli utala ko ijo. linja pakala vi wan. uta pona pakala ni. pana mute sewi anu mu, ma kala jaki len. ni tan suli wawa.&lt;/p&gt;
+&lt;p&gt;ko tan olin suwi anpa. mu pona conj anpa ale, a lete taso len, nimi mama ma uta. o insa monsi nasin ali, kin seme anpa tu, ali pipi nanpa a. en oko pona moli sama, sama sijelo ona jo. mod luka pakala ko, anu ko kute palisa.&lt;/p&gt;
+&lt;p&gt;ni ken seme suwi anpa, anu olin waso tu. waso kiwen linja oko n. noka kule akesi oko ni, pali utala o kin. taso lawa kiwen oth n, sike mama n oth, anu ni telo anpa.&lt;/p&gt;</description>
+  </item>
+  <item>
+   <title>The Ramen from Midnight Diner: A recipe</title>
+   <link>https://portabloc.local/2023/11/curry-ramen</link>
+   <pubDate>Fri, 03 Nov 2023 00:00:00 +0100</pubDate>
+   <description>
+&lt;!--tags: ramen, recipe--&gt;
+&lt;p&gt;&lt;img src=&quot;https://images.unsplash.com/photo-1613232683444-de0a4942e932?crop=entropy&amp;amp;cs=tinysrgb&amp;amp;fit=max&amp;amp;fm=jpg&amp;amp;ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8amFwYW5lc2UlMjByYW1lbnx8MHx8fHwxNjE4OTkxMzE4&amp;amp;ixlib=rb-1.2.1&amp;amp;q=80&amp;amp;w=1080&quot; alt=&quot;Ramen&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;東京ダイナー: ミッドナイトストーリーズで提供されるカレーラーメンは、そのユニークな風味と独特なスパイスの組み合わせで人気を集めています。このブログエントリーでは、東京ダイナーのレシピを使用して、自宅で美味しいカレーラーメンを作る方法をご紹介します。ぜひ、この特別なラーメンを自宅で楽しんでみてください。&lt;/p&gt;
+&lt;!--more--&gt;
+&lt;p&gt;材料:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ラーメン麺&lt;/li&gt;
+&lt;li&gt;カレーペースト&lt;/li&gt;
+&lt;li&gt;野菜（玉ねぎ、にんじん、もやしなど）&lt;/li&gt;
+&lt;li&gt;豚肉または鶏肉（お好みで）&lt;/li&gt;
+&lt;li&gt;醤油&lt;/li&gt;
+&lt;li&gt;塩&lt;/li&gt;
+&lt;li&gt;ごま油&lt;/li&gt;
+&lt;li&gt;ネギ（刻んでおく）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;手順:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;ラーメン麺を袋の指示に従って茹でます。茹で上がったら水で洗い、水分を切っておきます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;フライパンにごま油を加え、中火で刻んだ野菜を炒めます。野菜が柔らかくなるまで炒め続けます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;野菜が柔らかくなったら、豚肉または鶏肉を加え、しっかりと焼きます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;カレーペーストを加え、全体をよく混ぜ合わせます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;醤油と塩を少量ずつ加え、味を調整します。お好みで追加のスパイスや調味料を使用しても良いでしょう。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;炒めた野菜と肉の上に、茹でたラーメン麺をのせます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;全体をよく混ぜ合わせ、ラーメン麺と具材をカレーソースで絡めます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ラーメンボウルに盛り付け、刻んだネギをトッピングします。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;お好みで、麺にトーストしたガーリックや唐辛子を添えても良いでしょう。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;お好みで、ご飯やキムチ、漬物などの副菜を添えても美味しく楽しめます。&lt;/p&gt;</description>
+  </item>
+ </channel>
+</rss>

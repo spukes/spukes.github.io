@@ -1,0 +1,19 @@
+# Fuck Robots!
+# Modify as you want, personally I don't like to be harassed by GAFAM so I only allow access to my fav robots
+
+User-agent: *
+Disallow: /
+
+User-agent: bingbot
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+
