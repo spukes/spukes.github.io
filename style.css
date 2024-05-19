@@ -145,4 +145,5 @@ article{
     text-align: center;
     float: none;
   }
+  div.main {margin-left: 0;}
 }
