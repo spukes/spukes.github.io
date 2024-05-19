@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	background-color: rgb(0, 0, 0);
 	color: whitesmoke;
@@ -117,4 +118,85 @@ article{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+=======
+body {
+	background-color: rgb(0, 0, 0);
+	color: whitesmoke;
+}
+
+h1 {
+	text-align: center;
+	color: rgb(22, 174, 201);
+	margin-left: 20px;
+}
+
+p {
+	text-indent: 50px;
+	font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+
+  footer {
+	background-color: #2e2929;
+	padding: 10px;
+	text-align: center;
+	color: white;
+  }
+  
+
+ /* unvisited link */
+ a:link {
+	color: red;
+	font-family: "Lucida Console", "Courier New", monospace;
+	/*background-color: rgb(255, 145, 0);*/
+  }
+  
+  /* visited link */
+  a:visited {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: rgb(6, 214, 6);
+  }
+  
+  /* mouse over link */
+  a:hover {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: blue;
+  } 
+
+
+  pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: "Fira Code", monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+ul{
+	font-family: "Lucida Console", "Courier New", monospace;
+  font-style: italic;
+}
+
+article{
+  padding: 3px;
+  background-color: #201e1e;
+  border: 1px solid green;
+  border-radius: 10px;
+  
+>>>>>>> c5826430ed220aae0cf0e4a9217474a5f104e0c3
 }
