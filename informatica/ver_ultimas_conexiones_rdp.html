@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="gl-ES">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>HUGO.GAL</title>
+</head>
+
+
+<body>
+
+
+<div class="sidenav">
+    <a href="../index.html">Inicio</a>
+    <a href="../blogue/index.html">Blogue</a>
+    <a href="index.html">Informática</a>
+    <a href="../libros/index.html">Libros</a>
+    <a href="../cine/index.html">Cine e series</a>
+  </div>
+
+
+<div class="main">
+<h1>Ver os usuarios das últimas conexións por RDP</h1>
+<p>As veces pode ser interesante saber quen se conectou por última vez a un servidor por RDP (Escritorio Remoto) e para iso podemos
+  lanzar este script por Powershell:
+</p>
+<p><pre><xmp>$RDPAuths = Get-WinEvent -LogName 'Microsoft-Windows-TerminalServices-RemoteConnectionManager/Operational' -FilterXPath '<QueryList><Query Id="0"><Select>*[System[EventID=1149]]</Select></Query></QueryList>'
+[xml[]]$xml=$RDPAuths|Foreach{$_.ToXml()}
+$EventData = Foreach ($event in $xml.Event)
+{ New-Object PSObject -Property @{
+TimeCreated = (Get-Date ($event.System.TimeCreated.SystemTime) -Format 'yyyy-MM-dd hh:mm:ss K')
+User = $event.UserData.EventXML.Param1
+Domain = $event.UserData.EventXML.Param2
+Client = $event.UserData.EventXML.Param3
+}
+} $EventData | FT | select -First 20</xmp></pre></p>
+
+</div>
+</body>
+<footer>HUGO.GAL dende 2023 - <a rel="me" href="https://mastodon.gal/@Hugo">Mastodon</a>  </footer>
+</html>
+
+
