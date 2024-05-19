@@ -92,24 +92,23 @@ article{
 .sidenav {
   margin:0;
   padding:0;
-  height:100%;
   width: 230px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 20px; /* Stay at the top */
-  left: 10px;
   background-color: #111; /* Black */
-  overflow-x: auto; /* Disable horizontal scroll */
-  padding-top: 20px;
+  height: 100%;
+  overflow: auto; /* Disable horizontal scroll */
+
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 16px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
+  text-decoration: none;
+
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -120,17 +119,14 @@ article{
 /* Style page content */
 .main {
   margin-left: 230px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+  padding: 1px 16px;
 
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 1000px) {
   .sidenav {
     width: 100%;
     height: auto;
@@ -140,9 +136,10 @@ article{
   .main {margin-left: 0;}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   .sidenav a {
     text-align: center;
     float: none;
   }
+  .main {margin-left: 0;}
 }
