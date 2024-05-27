@@ -6,10 +6,11 @@ body {
 
 h1 {
 	text-align: center;
-	color: rgb(22, 174, 201);
+	color: rgb(174, 246, 248);
 	margin-left: 20px;
-  
 }
+
+
 
 p {
 	text-indent: 50px;
@@ -32,21 +33,26 @@ p {
 
  /* unvisited link */
  a:link {
-	color: red;
+	color: rgb(174, 246, 248);
 	font-family: "Lucida Console", "Courier New", monospace;
+  text-decoration: none; padding-bottom: 1px; border-bottom: 1px solid #8d8df3; 
 	/*background-color: rgb(255, 145, 0);*/
   }
   
   /* visited link */
   a:visited {
 	font-family: "Lucida Console", "Courier New", monospace;
-	color: rgb(6, 214, 6);
+	color: rgb(174, 246, 248);
+  text-decoration: none; padding-bottom: 1px; border-bottom: 1px solid #8d8df3; 
+
   }
   
   /* mouse over link */
   a:hover {
 	font-family: "Lucida Console", "Courier New", monospace;
 	color: hotpink;
+  cursor: pointer
+  
   }
   
   /* selected link */
@@ -82,7 +88,7 @@ ul{
 article{
   padding: 3px;
   background-color: #201e1e;
-  border: 1px solid green;
+  border: 1px solid rgb(174, 246, 248);
   border-radius: 10px;
   
 }
