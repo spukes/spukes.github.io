@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "C:/DATOS/HUGO.GAL"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/*.rpyc": true,
+			"**/*.rpa": true,
+			"**/*.rpymc": true,
+			"**/cache/": true
+		}
+	}
+}
