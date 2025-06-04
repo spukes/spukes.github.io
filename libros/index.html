@@ -2,8 +2,8 @@
 <html lang="gl-ES">
 <head>
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>HUGO.GAL</title>
 </head>
 
@@ -11,13 +11,24 @@
 <body>
 
 
-<div class="sidenav">
-    <a href="../index.html">Inicio</a>
-    <a href="../blogue/index.html">Blogue</a>
-    <a href="../informatica/index.html">Informática</a>
-    <a href="../libros/index.html">Libros</a>
-    <a href="../cine/index.html">Cine e series</a>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Hugo.gal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link" href="https://hugo.gal">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://hugo.gal/blogue/index.html">Blogue</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://hugo.gal/informatica/index.html">Informática</a></li>
+        <li class="nav-item"><a class="nav-link active" href="https://hugo.gal/libros/index.html">Libros</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://hugo.gal/cine/index.html">Cine e series</a></li>
+      </ul>
+    </div>
   </div>
+</nav>
 
 
 <div class="main">
@@ -25,8 +36,11 @@
 <p>Artigos de libros e literatura</p>
 
 
-<article id ="Víctor_Lukdary">
-  <h2>Víctor Lukdary</h2>
+<article id ="Víctor_Lukdary" class="bg-white p-4 rounded shadow-sm border mx-3">
+  <header class="mb-4">
+  <h2 class="text-2xl font-semibold text-gray-800">Víctor Lukdary</h2>
+  </header>
+  <div class="space-y-4 text-gray-700 leading-relaxed">
   <p>Víctor Lukdary é o alcume dun escritor de ciencia ficción que auto publica os seus libros en Amazon. Non sei quen é na realidade, 
     pois non ten páxina personal, blogue nin redes sociais coñecidas. Tan só atopeino no Facebook porén non o actualiza dende hai anos. ¿E 
     por que falo de él? Como podemos ver <a href="https://www.amazon.es/stores/V%C3%ADctor-Lukdary/author/B08WLDFT8Y?ref=sr_ntt_srch_lnk_1&qid=1747031789&sr=8-1&isDramIntegrated=true&shoppingPortalEnabled=true">
@@ -44,13 +58,16 @@
     a ciencia ficcion, invítoche a ler «Último tren a casa» e coñecer o seu universe. Se che convence, entón vai por «Renacimiento: Memorias del 
     Resurgir I» e benvido a un universo onde poucas cousas son como parecen.
   </p>
+  </div>
 </article>
 <br>
 
 
 
-<article id ="la_playa_de_los_dragones">
-  <h2>La playa de los dragones - Gregg Dunnett</h2>
+<article id ="la_playa_de_los_dragones" class="bg-white p-4 rounded shadow-sm border mx-3">
+  <header class="mb-4"><h2 class="text-2xl font-semibold text-gray-800">La playa de los dragones - Gregg Dunnett</h2>
+  </header>
+  <div class="space-y-4 text-gray-700 leading-relaxed">
   <p>Empecei a ler este libro, que é a cuarta (e de momento, última) entrega da serie "Isla de Lornea". Os catro libros están, a verdade, bastante
     ben no sentido de que son doados e rápidos de ler. Quero decir, que non se fan densos. Ademáis, está narrado dende o punto de vista dun rapaz
     e é moi curioso ver como pensa e como actúa dende a súa perspectiva. Non é a típica actuación dun neno de 16 anos se non de alguén tímido, 
@@ -74,21 +91,27 @@
   <p>En fin, que estos erros non desmerezan a boa serie que é "Isla de Lornea" porque paga a pena, e so por estos erros de edición non son suficientes 
       como para non mercalos..</p>
   <p>Si, xa sei... todos cometemos erros ao escribir. Eu mesmo, nesta entrada, seguro que teño un montón, pero esto non o lee ninguén...</p>
+  </div>
 </article>
 <br>
 
-<article id ="tres_ratones_ciegos">
-  <h2>Tres ratones ciegos - Agatha Christie</h2>
+<article id ="tres_ratones_ciegos" class="bg-white p-4 rounded shadow-sm border mx-3">
+  <header class="mb-4"><h2 class="text-2xl font-semibold text-gray-800">Tres ratones ciegos - Agatha Christie</h2>
+  </header>
+  <div class="space-y-4 text-gray-700 leading-relaxed">
   <p>Tres ratones ciegos é unha das obras máis coñecidas de Agatha Christie e a verdade é que o entendo perfectamente. É unha obra con poucos 
     personaxes e que foi representada teatralmente en múltiples ocasións, porque a obra invita a facelo. Sabes que un dos personaxes é 
     o asasino pero tes dúbidas sobre quen, e esas dúbidas van saltando dun a outro ao longo de tódala historia.
   </p>
   <p>Pareceoume moi divertida e de lectura obrigada para quen esté empezando a leer misterio ou a Agatha Christie.</p>
+  </div>
 </article>
 
 <br>
-<article id ="Se_anuncia_un_asasinato">
-  <h2>Se anuncia un asesinato - Agatha Christie</h2>
+<article id ="Se_anuncia_un_asasinato" class="bg-white p-4 rounded shadow-sm border mx-3">
+  <header class="mb-4"><h2 class="text-2xl font-semibold text-gray-800">Se anuncia un asesinato - Agatha Christie</h2>
+  </header>
+  <div class="space-y-4 text-gray-700 leading-relaxed">
   <p>Acabo de leer <i>&laquo;Se anuncia un asesinato&raquo;</i> e, a verdade, o comezo está moi ben pois o anuncio de que se vai cometer 
   un asasinato é algo que me chama a tención e me xurden dúbidas sobre cómo se fai o anuncio, quen o pon e, sobre todo, cómo é posible que 
 se cometa un asatinato que foi anunciado con antelación. Porén, pronto empezan os meus problemas. O número de personaxes que aparecen é demasiado 
@@ -103,11 +126,13 @@ que salen na historia se non que tírase moito dos antepasados destos, o que lio
     da casa principal da historia.</p>
 <p>En definitiva, non foi un libro que disfrutara demasiado e non creo que o volva a reler. </p>
 <p>Podes deixar os teus comentarios a esta entrada aquí: <a href="https://mastodon.gal/@Hugo/112546754568224981">https://mastodon.gal/@Hugo/112546754568224981</a></p>
-
+</div>
 </article>
-
-<article id="O_asasinato_de_Roger_Ackroyd">
-  <h2>O asasinato de Roger Ackroyd - Agatha Christie</h2>
+<br>
+<article id="O_asasinato_de_Roger_Ackroyd" class="bg-white p-4 rounded shadow-sm border mx-3">
+  <header class="mb-4"><h2 class="text-2xl font-semibold text-gray-800">O asasinato de Roger Ackroyd - Agatha Christie</h2>
+  </header>
+  <div class="space-y-4 text-gray-700 leading-relaxed">
 <p>Esta semana veño de rematar de ler o libro <i>&laquo;O asasinato de Roger Ackroyd&raquo;</i> de Agatha Christie <a href="https://editorialgalaxia.gal/autor/christie-agatha/">(editorial Galaxia)</a> e, como non podería ser doutro xeito, encantoume.
 O que máis me gusta desta escritora é que sempre da ao lector todos os datos necesarios para que o lector poda facer as súas propias investigacións e 
 intentar resolver o caso polos seus medios. É verdade que esto require ir tomando notas e reler moita historia, pero os datos están ahí. Esto é algo
@@ -128,12 +153,13 @@ que non me pasa cando lexo a Sherlock Holmes, por exemplo, quen resolve os casos
 </p>
 <p>Bo libro, rápida lectura, bos personaxes. Coma sempre, un libro obligado se che gusta o misterio e os detectives.</p>
 <p>Podes deixar os teus comentarios a esta entrada aquí: <a href="https://mastodon.gal/@Hugo/112467171763202866">https://mastodon.gal/@Hugo/112467171763202866</a></p>
+</div>
 </article>
 
 
 
 </div>
 </body>
-<footer>HUGO.GAL dende 2023 - <a rel="me" href="https://mastodon.gal/@Hugo">Mastodon</a> </footer>
+<footer class="text-center py-3 bg-light">HUGO.GAL dende 2023 - <a rel="me" href="https://mastodon.gal/@Hugo">Mastodon</a>  </footer>
 </html>
 

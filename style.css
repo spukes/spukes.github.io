@@ -12,6 +12,9 @@ h1 {
 
 
 
+
+
+
 p {
 	text-indent: 50px;
 	font-family: "Lucida Console", "Courier New", monospace;
@@ -125,13 +128,7 @@ strong {
 }
 
 
-article{
-  padding: 3px;
-  background-color: #201e1e;
-  border: 1px solid rgb(174, 246, 248);
-  border-radius: 10px;
-  
-}
+
 
 
 
