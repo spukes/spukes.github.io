@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Informaticas on HUGO.GAL</title>
+    <link>http://localhost:1313/informatica/</link>
+    <description>Recent content in Informaticas on HUGO.GAL</description>
+    <generator>Hugo</generator>
+    <language>gl-ES</language>
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/informatica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como instalar Ubuntu 24.04</title>
+      <link>http://localhost:1313/informatica/como_instalar_ubuntu_24_04/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/informatica/como_instalar_ubuntu_24_04/</guid>
+      <description>&lt;p&gt;Pasos para instalar Ubuntu 24.04:&lt;/p&gt;&#xA;&lt;p&gt;O primeiro que temos que facer é descargar a ISO dende a páxina de Ubuntu:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ubuntu.com/download/desktop&#34;&gt;Páxina de descargas de Ubuntu&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Unha vez que temos a ISO descargada temos duas opcións: ou ben a instalamos nunha computadora que non teña sistema operativo, ou teña un sistema operativo Windows (neste caso, Ubuntu detectaráno e poderás instalarlo ao seu carón) ou tamén podes facerte unha máquina virtual con VirtualBox, por exemplo, e instalarlo virtualmente sen tocar o teu sistema operativo actual.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ver as últimas conexións feitas por RDP a un servidor</title>
+      <link>http://localhost:1313/informatica/ver_ultimas_conexiones_rdp/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/informatica/ver_ultimas_conexiones_rdp/</guid>
+      <description>&lt;p&gt;As veces pode ser interesante saber quen se conectou por última vez a un servidor por RDP (Escritorio Remoto) e para iso podemos lanzar este script por Powershell:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$RDPAuths = Get-WinEvent -LogName &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Microsoft-Windows-TerminalServices-RemoteConnectionManager/Operational&amp;#39;&lt;/span&gt; -FilterXPath &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;lt;QueryList&amp;gt;&amp;lt;Query Id=&amp;#34;0&amp;#34;&amp;gt;&amp;lt;Select&amp;gt;*[System[EventID=1149]]&amp;lt;/Select&amp;gt;&amp;lt;/Query&amp;gt;&amp;lt;/QueryList&amp;gt;&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#66d9ef&#34;&gt;xml[]&lt;/span&gt;]$xml=$RDPAuths|&lt;span style=&#34;color:#66d9ef&#34;&gt;Foreach&lt;/span&gt;{$_.ToXml()}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$EventData = &lt;span style=&#34;color:#66d9ef&#34;&gt;Foreach&lt;/span&gt; ($event &lt;span style=&#34;color:#66d9ef&#34;&gt;in&lt;/span&gt; $xml.Event)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{ New-Object PSObject -Property @{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;TimeCreated = (Get-Date ($event.System.TimeCreated.SystemTime) -Format &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;yyyy-MM-dd hh:mm:ss K&amp;#39;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;User = $event.UserData.EventXML.Param1&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Domain = $event.UserData.EventXML.Param2&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Client = $event.UserData.EventXML.Param3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;} $EventData | FT | select -First &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

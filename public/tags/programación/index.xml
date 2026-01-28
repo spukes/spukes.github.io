@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programación on HUGO.GAL</title>
+    <link>http://localhost:1313/tags/programaci%C3%B3n/</link>
+    <description>Recent content in Programación on HUGO.GAL</description>
+    <generator>Hugo</generator>
+    <language>gl-ES</language>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/programaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>28/01/2026</title>
+      <link>http://localhost:1313/blogue/2026-01-28-reflexion/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogue/2026-01-28-reflexion/</guid>
+      <description>&lt;p&gt;Teño un montón de proxectos a medias pero é que non teño gañas de poñerme con ningún.&#xA;O que máis me preocupa é unha aventura conversacional que fixen con Godot. Creo que fixen a parte más difícil pero agora que me queda o máis sinxelo, non teño gañas de rematala. Quizáis sexa por falta de desafíos.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

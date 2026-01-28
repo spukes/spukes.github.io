@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reflexión on HUGO.GAL</title>
+    <link>http://localhost:1313/tags/reflexi%C3%B3n/</link>
+    <description>Recent content in Reflexión on HUGO.GAL</description>
+    <generator>Hugo</generator>
+    <language>gl-ES</language>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reflexi%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>28/01/2026</title>
+      <link>http://localhost:1313/blogue/2026-01-28-reflexion/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogue/2026-01-28-reflexion/</guid>
+      <description>&lt;p&gt;Teño un montón de proxectos a medias pero é que non teño gañas de poñerme con ningún.&#xA;O que máis me preocupa é unha aventura conversacional que fixen con Godot. Creo que fixen a parte más difícil pero agora que me queda o máis sinxelo, non teño gañas de rematala. Quizáis sexa por falta de desafíos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>02/06/2025</title>
+      <link>http://localhost:1313/blogue/2025-06-02-casino/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogue/2025-06-02-casino/</guid>
+      <description>&lt;p&gt;Este fin de semana entrei nun Casino por primeira vez aquí na Galiza. Non sei se se lledebería chamar casino a isto, porque máis ben era unha sala coas máquinas de slots, apuestas e unha cafetería. No centro da sala tamén había as típicas mesas da ruleta e do black jack. Ao final gañamos 6 € así que, pos nin tan mal. Teño gañas de ir ao Casino de Vigo o mes que ven, creo que é máis grande e ten máis cousas. O plan sería máis que nada tomar algo nel, algún coctel ou algo así. Por sorte non son moito de apostar nin de xogar ás loterías así que non teño medo de perder demasiados cartos.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

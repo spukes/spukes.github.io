@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Galiza on HUGO.GAL</title>
+    <link>http://localhost:1313/tags/galiza/</link>
+    <description>Recent content in Galiza on HUGO.GAL</description>
+    <generator>Hugo</generator>
+    <language>gl-ES</language>
+    <lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/galiza/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>02/06/2025</title>
+      <link>http://localhost:1313/blogue/2025-06-02-casino/</link>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogue/2025-06-02-casino/</guid>
+      <description>&lt;p&gt;Este fin de semana entrei nun Casino por primeira vez aquí na Galiza. Non sei se se lledebería chamar casino a isto, porque máis ben era unha sala coas máquinas de slots, apuestas e unha cafetería. No centro da sala tamén había as típicas mesas da ruleta e do black jack. Ao final gañamos 6 € así que, pos nin tan mal. Teño gañas de ir ao Casino de Vigo o mes que ven, creo que é máis grande e ten máis cousas. O plan sería máis que nada tomar algo nel, algún coctel ou algo así. Por sorte non son moito de apostar nin de xogar ás loterías así que non teño medo de perder demasiados cartos.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
