@@ -1,0 +1,44 @@
+/* Custom Styles for Hugo.gal */
+
+/* General Styles */
+body {
+    /* Ensure footer stays at bottom if content is short */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Blog Styles (from blogue/index.html) */
+.entrada h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+
+/* Interactive Badges/Tags */
+.badge {
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+.badge-active {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+#tag-filter-container .btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
