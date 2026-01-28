@@ -86,7 +86,98 @@
 <div id="tag-filter-container" class="mb-4">
     
 </div>
-<script src="/%20js/blog-filter.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log("Blog filter script running");
+        const articles = document.querySelectorAll('article');
+        const tagContainer = document.getElementById('tag-filter-container');
+
+        if (!tagContainer) {
+            console.log("Tag container not found");
+            return;
+        }
+
+        const tags = new Set();
+        console.log("Found articles:", articles.length);
+
+        
+        articles.forEach(article => {
+            const badges = article.querySelectorAll('.badge');
+            badges.forEach(badge => {
+                const tagText = badge.textContent.trim();
+                tags.add(tagText);
+                badge.style.cursor = 'pointer';
+                badge.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    filterByTag(tagText);
+                });
+            });
+        });
+
+        console.log("Found tags:", tags);
+
+        
+        const allBtn = document.createElement('button');
+        allBtn.className = 'btn btn-outline-primary btn-sm active filter-btn me-2 mb-2';
+        allBtn.textContent = 'Ver todos';
+        allBtn.addEventListener('click', () => filterByTag('all'));
+        tagContainer.appendChild(allBtn);
+
+        
+        Array.from(tags).sort().forEach(tag => {
+            const btn = document.createElement('button');
+            btn.className = 'btn btn-outline-secondary btn-sm filter-btn me-2 mb-2';
+            btn.textContent = tag;
+            btn.addEventListener('click', () => filterByTag(tag));
+            tagContainer.appendChild(btn);
+        });
+
+        function filterByTag(selectedTag) {
+            console.log("Filtering by:", selectedTag);
+
+            
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.textContent === selectedTag || (selectedTag === 'all' && btn.textContent === 'Ver todos')) {
+                    btn.classList.add('active');
+                    if (selectedTag === 'all') {
+                        btn.classList.replace('btn-outline-primary', 'btn-primary');
+                    } else {
+                        btn.classList.replace('btn-outline-secondary', 'btn-secondary');
+                    }
+                } else {
+                    btn.classList.remove('active');
+                    btn.classList.replace('btn-primary', 'btn-outline-primary');
+                    btn.classList.replace('btn-secondary', 'btn-outline-secondary');
+                }
+            });
+
+            
+            document.querySelectorAll('.badge').forEach(badge => {
+                if (badge.textContent.trim() === selectedTag) {
+                    badge.classList.remove('bg-light', 'text-secondary');
+                    badge.classList.add('bg-primary', 'text-white');
+                } else {
+                    badge.classList.remove('bg-primary', 'text-white');
+                    badge.classList.add('bg-light', 'text-secondary');
+                }
+            });
+
+            
+            articles.forEach(article => {
+                if (selectedTag === 'all') {
+                    article.classList.remove('d-none');
+                } else {
+                    const articleTags = Array.from(article.querySelectorAll('.badge')).map(b => b.textContent.trim());
+                    if (articleTags.includes(selectedTag)) {
+                        article.classList.remove('d-none');
+                    } else {
+                        article.classList.add('d-none');
+                    }
+                }
+            });
+        }
+    });
+</script>
 <section class="blog-entradas">
     
     <article id=" 28/01/2026" class="card mb-4 rounded shadow-sm border mx-3">
