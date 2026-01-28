@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="gl-ES">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta charset="UTF-8"> 
-    <title>HUGO.GAL</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Blogue persoal de Hugo.gal con reflexións, videoxogos e opinións sobre a vida na Galiza.">
+  <title>Blogue | HUGO.GAL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     .entrada h2 {
@@ -16,796 +17,1028 @@
       padding-bottom: 0.3em;
       margin-bottom: 1em;
     }
+
+    .badge {
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .badge:hover {
+      transform: scale(1.1);
+      background-color: #0d6efd !important;
+      color: white !important;
+    }
+
+    .badge-active {
+      background-color: #0d6efd !important;
+      color: white !important;
+    }
+
+    #tag-filter-container .btn {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
   </style>
-
-
 </head>
 
 
-<body>
+<body data-depth="1" data-nav="blogue">
+  <div id="header-container"></div>
 
+  <main class="container my-5">
+    <h1>Blogue</h1>
+    <p>Este é o meu blogue. </p>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="https://hugo.gal">Hugo.gal</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="menuNav">
-      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-        <li class="nav-item"><a class="nav-link" href="https://hugo.gal">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link active" href="https://hugo.gal/blogue/index.html">Blogue</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://hugo.gal/informatica/index.html">Informática</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://hugo.gal/libros/index.html">Libros</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://hugo.gal/cine/index.html">Cine e series</a></li>
-      </ul>
+    <div id="tag-filter-container" class="mb-4">
+      <!-- Tags will be dynamically injected here -->
     </div>
-  </div>
-</nav>
-
-<main class="container my-5">
-<h1>Blogue</h1>
-<p>Este é o meu blogue. </p>
-<section class="blog-entradas">
+    <section class="blog-entradas">
 
 
-<article id ="15/10/2025" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">02/06/2025</h5>
-      </div>
-    <p class="card-text text-muted">Onte acabeime (por fin) o GTA V e a verdade é que é un xogazo. Paseino moi bem malia que non son moito de xogos de disparos
-      e de matar, pero o toque de humor e o caos que se forman nas misións, ese toque arcade... todo tocoume bastante ben. Ao rematar as misións da historia quedáronme
-      por facer algunhas misións secundarias pero xa non fun quen de rematalas. Hai que saber cando parar ;) 
-      Agora estou na procura de outro xogo, sempre queda o Skyrim pero hai que ver outras cousas, co pouco tempo que teño para xogar (e poucas gañas, non son
-      un gran xugón)
-  </p>
+      <article id="15/10/2025" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">02/06/2025</h5>
+          </div>
+          <p class="card-text text-muted">Onte acabeime (por fin) o GTA V e a verdade é que é un xogazo. Paseino moi bem
+            malia que non son moito de xogos de disparos
+            e de matar, pero o toque de humor e o caos que se forman nas misións, ese toque arcade... todo tocoume
+            bastante ben. Ao rematar as misións da historia quedáronme
+            por facer algunhas misións secundarias pero xa non fun quen de rematalas. Hai que saber cando parar ;)
+            Agora estou na procura de outro xogo, sempre queda o Skyrim pero hai que ver outras cousas, co pouco tempo
+            que teño para xogar (e poucas gañas, non son
+            un gran xugón)
+          </p>
 
-  </div>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Videoxogos</span>
-      <span class="badge bg-light text-secondary">#GTA</span>
-    </div>
-  </div>
-</article>
-<br>
-
-
-
-
-
-
-<article id ="02/06/2025" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">02/06/2025</h5>
-      </div>
-    <p class="card-text text-muted">Este fin de semana entrei nun Casino por primeira vez aquí na Galiza. Non sei se se lledebería chamar casino a isto, porque máis ben era unha 
-    sala coas máquinas de slots, apuestas e unha cafetería. No centro da sala tamén había as típicas mesas da ruleta e do black jack. Ao final 
-    gañamos 6 € así que, pos nin tan mal. Teño gañas de ir ao Casino de Vigo o mes que ven, creo que é máis grande e ten máis cousas. O plan sería 
-    máis que nada tomar algo nel, algún coctel ou algo así. Por sorte non son moito de apostar nin de xogar ás loterías así que non teño medo 
-    de perder demasiados cartos.
-  </p>
-
-  </div>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-
-
-
-
-<article id ="12/05/2025" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">12/05/2025</h5></div>
-  <p class="card-text text-muted">Hai uns días saquei unha nova versión de U-la Carmela para itch.io Non a quero meter na Play Store porque aparece o meu enderezo completo 
-    e teño que pagar 25 eurazos se quero facer unha nova conta e transferir as miñas aplicacións a ela. Polo tanto, de momento solo está publicitada
-    en itch.io .</p>
-    <p>Por outar banda, todo segue como sempre. A miña vida é aburrida e non teño moitas novedades así que así van pasando os días. Esta fin
-       de semana estiven a probar un auto host de Ghost, un sistema de blogs, e tamén pusen en liña a miña biblioteca de Calibre de xadrez, pero 
-       teño que ter o ordenador encendido para que funcione o que non me mola nada. Xa verei como fago.
-    </p>
-  <p>Hoxe non traballo de normal porque a miña dona ten unha cita médica e vou a axudala. Porén, estou de guardia así que traballarei na sombra.</p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-
-
-<article id ="22/01/2025" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">22/01/2025</h5></div>
-  <p class="card-text text-muted">Hoxe soñei que a illa de Toralla volvía ser un montón de area asomando por enriba do mar, sen edificios nin chalets, e non se me ocorre 
-    un soño máis fermoso.</p>
-
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-
-<br>
-
-<article id ="22/12/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">22/12/2024</h5></div>
-  <p class="card-text text-muted">Este ano gastei un montón de cartos no nadal. Espero que pague a pena.</p>
-
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-
-<br>
-
-
-<article id ="22/09/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">22/09/2024</h5></div>
-  <p class="card-text text-muted">Onte fun xogar outro torneo de Xadrez na cidade das Burgas. En principio foi o último torneo que xogarei este ano pois a partires de agora
-    xa vou deixar de ter tanto tempo libre para poder ir. O caso é que non me foi tan mal, de feito fixen 3/6 o que está bastante ben. Pode que eu 
-    non sexa moi esixente cos puntos que quero, pero tengo en conta o pouco tempo que levo "en serio" e que xogo contra persoas que están en clubs
-    e xogan case tódolos días, pois para min ata o mínimo punto é moi importante. Eu son autodidacta na miña casa, aprendendo a base de proba e error 
-    e vendo vídeos en YouTube. De feito, sempre que vou a un torneo penso que todo o que sexa conseguir ao menos un empate está ben.</p>
-    <p class="card-text text-muted">O que non me gustou moito foi a miña última partida, onde xoguei contra un rapaz e lle fixen unha partida perfecta, unha liña teórica que 
-    xamais pensei que se fora a dar na vida real, pero así foi. Dínlle mate en apenas unhas poucas xogadas e o rapaz acabo chorando. Quizáis non
-    chorando do todo pero sí coas mans nos ollos e quedou na mesa un bo rato. Eu sentínme mal por él, porque para él foi unha forma de perder 
-    un pouco humillante, e, bueno, intente subirlle os ánimos e decirlle que pensara en positivo: seguro que nunca máis ía volver perder 
-    deste xeito. É o malo dos torneos onde xogamos todos contra todos, para os maiores é duro perder contra un rapaz pero para os rapaces tamén 
-  pode ser duro se hai moita diferenza de nivel</p>
-  <p class="card-text text-muted">Pero bueno, pensando en que a vida segue a verdade é que disfrutei moito do torneo e espero ter posibilidades de volver o ano que ben.</p>
-
-  </p>
-
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-<article id ="24/08/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">24/08/2024</h5></div>
-  <p class="card-text text-muted">Acabáronse as vacacións e aquí seguimos na mesma rutina. Este ano as vacacións, teño que recoñecer, que non me gustaron demasiado.
-    Estivemos nun camping e ao final é facer o mesmo que temos que facer na casa pero noutro lado. Hai que face-la compra, a comida, limpar, 
-    ordenar a casa.. bueno un coñazo. Non sentín que desconectara moito. Logo, a semana pasada fumos a un parque acuático en Portugal, o que 
-    está máis preto de Vila-Real e está bastante chulo. A verdade é que tivemos sorte porque foi chegar, mercar as entradas e esgotáronse. Se chegamos 
-    cinco minutos máis tarde, quedamos sen parque.</p>
-    <p class="card-text text-muted">Cambiando de tema, vendín o meu coche vello. Tiña xa 26 anos e agora quedei co coche antigo do meu pai, que ten a metade. É unha mágoa 
-      non poder mercar un coche novo pero é que están todos carísimos. O meu pai si mercou un novo pero aínda non llo deron. A verdade é que 
-      non boto de menos o meu coche antigo, foron moitos anos con él pero xa estaba canso del. Para min, era demasiado grande e tiña que 
-      maniobrar moito cada vez que quería aparcado ou facer calquera cousa.
-    </p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-
-<br>
-<article id ="10/06/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">10/06/2024</h5></div>
-  <p class="card-text text-muted">Bueno xa hai varios días que non escribo nada pero en verdade é que non teño nada que contar. Esta fin de semana 
-    estivemos en Pontevedra cun torneo de Tae Kwon Do das rapazas e logo tivemos unha pequena festa de cumpreanos porque, para a miña 
-    desgracia, sigo cumprindo anos irremediablemente. Non os levo tan mal como pensaba. Creo que o peor foi cando cumprín 40 anos e 
-    de súpeto o tempo pareceuse acelerar. Agora xa o levo mellor. É certo que ir ao ximansio estame a axudar porque mentalmente axuda 
-    bastante atoparse ben físicamente. Quero decir: se te ves ben físicamente, mentalmente estarás mellor.
-  </p>
-  <p class="card-text text-muted">Por outra banda, agora mesmo estou a aforrar para mercarme unha x-box. Canto teña todos os cartos reunidos tendréi dúbidas 
-    sobre se mercala ou non, é decir, sobre se gastar os cartos aforrados niso, ou se mercar unha playstation ou se gastalos en algo 
-    máis productivo. O tema de coller a x-box ven sobre todo para poder reproducir blueray, porque empezo a querer ter películas en formato 
-    físico, e tamén para poder xogar ao GTA VI cando salga, que lle teño moitas ganas. De momento, xa teño aforrado case a metade.
-  </p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-<article id = "01/06/2024" class="card mb-4 rounded shadow-sm border mx-3">
-<div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">01/06/2024</h5></div>
-<p class="card-text text-muted">Bueno vou escribir algunha entrada máis, antes de que pasen máis días con esto baleiro. En verdade, estos últimos días non pasou 
-  nada especial. Sigo traballando, facendo ximnasio e un pouco o de sempre. Estos días tiveron as festas no colexio e hoxe 
-  estivemos en Nigrán celebrando un cumpreano. Mañá temos outro.</p>
-  
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-<article id = "27/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">27/05/2024</h5></div>
-  <p class="card-text text-muted">Pois hoxe por fin reunín un pouco de valentía e afouteza e fun ao ximnasio. Custoume bastante porque sempre é difícil chegar a un 
-    sitio onde non coñeces a ninguén, nin cómo é o sitio, mentres que todos os que están ahí xa o coñecen todo e a todos. Estiven un 
-    pouco incómodo porque o monitor fíxome unha táboa de exercicios e logo marchou porque acabou o seu turno, e eu non coñecía quen era o monitor 
-    que entraba, polo que estiven uns 15 minutos sen facer nada porque non sabía a qué máquinas tiña que ir ni como funcionaban, foi bastante 
-    incómodo. Logo xa me din conta de quen era o novo monitor e me acheguei a él para que me seguira explicando. Fixen un pouco de pernas (vou 
-    sobre todo polos nocellos) e por sorte tampouco acabei moi canso, porque non quero ter maniotas. O bo que ten ese ximnasio é que polo mesmo 
-    prezo tamén ten piscina, así que igual tamén me empapo algún día.
-  </p>
-  <p class="card-text text-muted">Polo demáis sigo sen máis novedades. Sigo alternando entre Linux e Windows no meu ordenador según me pete. A verdade é que estou 
-    desexando marchar xa de vacacións. Apetéceme estar tirado ao carón da praia sen facer nada, xogando co mobil as miñas partidiñas de xadrez 
-    e deixando que as rapazas anden por ahí xogando con novos amigos.
-  </p>
-
-
-
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-
-<article id = "26/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">26/05/2024</h5></div>
-  <p class="card-text text-muted">Bueno, creo que ao final vou dar o paso de apuntar a un ximnasio. Non o fago por mazarme, se non porque as dores que teño no lombo cada vez vais a máis. E sei 
-    que a orixe desta dor ven dos nocellos, así que tocar facelos fortes para que o resto do corpo esté ben. Ao final, non fun quen de convencer á miña dona 
-    para que veña conmigo ao ximansio pero espero que se anime máis adiante. Non a quero presionar con este tema, se quere vir pois pasarémolo ben xuntos.
-  </p>
-  <p class="card-text text-muted">Por outra banda, xa dei coa tecla para instalar Linux no meu ordenador. Custoume un pouco máis do esperado, pero xa teño un Ubuntu orientado ao gaming 
-    instalado. O que non me gustou é que non me fixo unha partición LVM así que se algún día dou o salto, quero volver a formatealo todo para que quede cunha 
-    partición LVM e todo ben. Non é que tivera ningunha necesidade de instalar Linux, pero tampouco de usar Windows. En todo caso, non o borrei. O Windows 
-    segue ahí para cando queira usar algún xogo o programa que non funcione, ou non funcione ben, en Linux. Ademáis, teño instalado o Project Zomboid e estouno a probar,
-    porén, non instalei ningún xogo que sexa exixente tipo The Wither ou algo así. Pero teño a sensación de que non vai a ir tan ben como en Windows.
-  </p>
-  <p class="card-text text-muted">Laboralmente sigo igual que sempre. Esta semán teño guardia así que tocará durmir pouco.</p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-
-
-<article id="22/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">22/05/2024</h5></div>
-  <p class="card-text text-muted">Hoxe confirmei a miña teoría de que a rede social de Mastodon é moi boa. O respecto a interacción son moito mayores
-    que na outra rede do paxariño. Hoxe <a href="https://mastodon.gal/@Hugo/112484819032585455">preguntei por algún videoxogo</a> o que me poidera enganchar e enseguida tiven un montón 
-    de respostas, o que volvo a agradecer a todos dende aquí. Coñecín algún xogo do que non sabía, e aínda que ao final decanteime polo Kenshi 
-    ao final non resultou ser un xogo que me enganchase tanto como parecía. É difícil empezar, os gráficos non son unha marabilla, aínda que polo menos 
-    está en castellano.
-  </p>
-  <p class="card-text text-muted">A miña búsqueda dun xogo que me atrape segue en pe.</p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-<article id="20/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">20/05/2024</h5></div>
-  <p class="card-text text-muted">Bueno, hoxe foi un día normal. Cansado despois de traballar porque ao final tantos días seguidos sen facelo (o venres foi festa)
-    pois agora custa coller o ritmo de novo. Hoxe, no mastodon, descubrín o <a href="https://owncast.online/quickstart/">OwnCast</a> que é para 
-    emitir en vídeo dende a tua propia plataforma. Non ten mala pinta, pero a verdade é que non me vería ninguén polo que non sei se tería 
-    moito sentido.</p>
-    <p class="card-text text-muted">Aínda estou a pensarme se meterme no ximnasio. Non quero meterme e que logo me custe moito ir e deixalo. Debería ir, porque 
-      teño que exercitar os meus xeonllos para poder sentarme ben e que deixe de doerme as costas. 
-    </p>
-    <p class="card-text text-muted">Por outra banda, hoxe empecei un novo proxecto en Godot pero non sei se serei quen de rematalo. A idea é facer algo parecido a 
-      un <i>Dónde está Carmen Sandiego</i> pero en versión galega, viaxando pola xeografía galega. A idea parecéme boa pero, como dixen, non 
-      sei se serei capaz de facelo.
-    </p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-<article id="19/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">19/05/2024</h5></div>
-  <p class="card-text text-muted">E con esta entrada queda inaugurada o meu blogue. Agora xa é o final do día e a verdade é que estou bastante contento con como quedou
-    esta páxina. Entendo que ao ser HTML puro pois é un poco máis complicado tela actualizada, porque é todo picar código e nin tan sequeira
-    uso un editor WYSIWYG. Se alguén sabe dun que sexa bo e de código aberto encantaríame que mo dixera por Mastodon (enlace no footer)
-  </p>
-  <p class="card-text text-muted">Por outra banda hoxe é domingo e tampouco é que teña moito que contar. Teño pensado ir ao ximnasio a partires da semana que ven 
-    a ver se melloro un pouco o meu físico, porque estou a piques de chegar a unha idade que en canto mellor entres, máis tardas en caer.
-  </p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-<article id="18/01/2024" class="card mb-4 rounded shadow-sm border mx-3">
-<div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">18/01/2024</h5></div>
-<p class="card-text text-muted">Quizáis o tema é que non se me da ben esto de ser constante a hora de escribir cousas. Tamén pode ser que a miña vida seña tan aburrida que non teño nada intersante que contar.
-Cousas que pasaron neste mes de xaneiro:
-<p class="card-text text-muted"><menu>
-  <li>Os Reis Magos trouxéronme moitas cousas. O que máis me gustou foi un google nest, unha pantalla con altofalante que uso como despertador. Agora podo poñer música scifi mentres leo.</li>
-  <li>A miña vista segue mal, bastante mal. O peor é que non hai unha solución barata para arranxalo. As lentes de contacto ríxidas custan un ollo da cara. </li>
-</menu>
-
-E creo que nada máis, ou non me lembro agora mesmo.</p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-
-
-<article id="24/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">24/12/2023</h5></div>
-  <p class="card-text text-muted">Non me gusta o nadal. Para min, é a peor época do ano. A min gústame a rutina, facer as mesmas cousas os mesmos días, e o nadal e romper a
-      rutina case cada día. Hoxe é festivo, mañán non, pasado si, agora fin de semana... Unha tolería. Non me sinto ben. Quero os meus horarios,
-  as miñas ceas acougadas a mesma hora, estar durmindo a medianoite... E, ademáis, vai frío. </p>
-              
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-
-<article id="20/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">20/12/2023</h5></div>
-  <p class="card-text text-muted">Hoxe quitáronme por fin o último catéter que tiña dentro. Non vou negar que foi doloros e bastante noxento. Ademáis sentín como
-      perdín toda a miña dignidade tendo que quedar espido de cintura para abaixo diante do médico e dúas mulleres máis. Comprendo que ten
-      que ter así, pero non me fago a iso. Por sorte, se todo vai ben xa non volverei a pisar un centro médico en moito tempo. Agora mesmo xa so me doe ao mexar, porque ao quitarme o catéter pois é evidente que o pitiño agora está resentido. Nun par de días
-      estarei mellor.</p>
-  <p class="card-text text-muted">Por certo, que levo un par de días enganchado ao <em>Larry Suite wet dreams don't dry</em> e xa non lembraba o difíciles que poden chegar
-      a ser os click & point. Non deixo de quedar atascado cada pouco e cando resolvo algún puzzle e para volver a quedarme atascado outra vez.
-  </p>      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-
-<article id="19/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">19/12/2023</h5></div>
-  <p class="card-text text-muted">Levo moitos días sen actualizar pero é que tampouco teño ganas de facelo actualmente. Nos últimos días por fin quitáronme a 
-      <a href="#18/11/2023" class="card mb-4 rounded shadow-sm border mx-3">nefrostomía</a> do todo, así que agora xa ando sen bolsa e sen cables colgando. Aínda teño pendente a retirada dun catéter que teño 
-      dentro e que me está a molestar bastante, pero teño que ter paciencia polo menos ata mañá.</p>
-  <p class="card-text text-muted">Por outra banda, este fin de semana pasada tivemos competición de Taekwondo en Ourense e estivo moi ben, as rapazas fixéronno xenial.
-      Iso si, papamos moito frío. Sobre todo no coche porque a calefacción aínda non lle funciona moi ben.
-  </p>
-  <p class="card-text text-muted">Agora mesmo estou de vacacións, así que estou a aproveitar para ver algunhas películas e series que tiña pendentes. Onte vin
-      Mission Impossible 1 e xa teño a dúas lista para ver cando poida. Tamén baixeo a primeira tempada de The Wire aínda que non sei se 
-      aguantarie para vela. Xa o intentei un par de vaces e nunca fun quen de pasar do primeiro capítulo.
-  </p>
-  <p class="card-text text-muted">Xa para rematar, non sei se o comentei pero o outro día montamos uns estantes novos na cociña e tamén montamos a TV nova na parede do salón.
-      O da cociña foi case todo ben. Ao final na ferretería recomendáronme uns tacos moito mellores que os que tiña. Paga a pena non ir a mercar
-      cousas destas no chino. Respecto a TV, furei atravesando a parede, pero nada que non teña arranxo. Un pouco de aguaplast e xa quedaron
-      os buratos tapados.</p>
-  
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-
-<article id="10/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">10/12/2023</h5></div>
-  <p class="card-text text-muted">Estou canso de traballar. Estou canso de facer guardias. Estou canso de por o traballo por enriba da familia. De que me chamen as 12 da 
-      noite, as 4 da madrugada e as 8 da mañá. Non deberiamos ter que traballar tanto para poder ter un salario digno.
-  </p>
-  <p class="card-text text-muted">Por otra banda, a miña dona máis eu estamos a pensar en como aislar térmica y acústicamente un dos dormitorios. Finalmente, creo que 
-      imos poñer 2cm de corcho contra a parede e unha táboa de 1,5cm de agloremeado por diante. En teoría, o dormitorio quedaría ben
-      aillado acústicamente e sobre todo térmicamente, porque é unha habitación que agora mesmo é moi fría e ten bastante humidade. Según
-      o presuposto en Leroy Merlin, poderiamos ter todo o material por algo máis de 400 € Logo o tendremos que montar nos, que é o máis 
-      difícil dado que non temos moita experiencia en bricolaxe. Pero ben, o camiño faise andando.
-  </p>      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-<article id="07/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">07/12/2023</h5></div>
-  <p class="card-text text-muted">Pois nada, as rapazas levan dende o martes 5 fora de casa. Deunos moito medo, sobre todo a viaxe de ida porque foron ata Alacante
-      do tirón e pola noite, así que tivemos medo de que lles fora a pasar algo. Agora xa están volvendo así que estamos máis tranquilos.
-      A competición (Campionato de Españita) non lles foi mal. Non gañaron pero acadaron moita experiencia e o pasaron moi ben cos seus
-      amigos do club. Ademáis, botáronnos moito de menos o que sempre está ben : )  Esperamos que a experiencia lles valiese para ser
-  algo máis independientes e aprender a tomar decisión por elas mesmas.</p>
-      <p class="card-text text-muted">Por outra banda, nos estivemos solos en casa estos días. Unha sensación bastante rara porque ao terminar de traballar xa non
-          tiñamos nada que facer en todo o día: non había rapazas a quen levar a algures, ou recoller, ou facer deberes. Pero, a verdade,
-          xa temos moitas ganas de que estén aquí de volta e poderlles dar unha aperta moi grande.           </p>
-      <p class="card-text text-muted">Este fin de semana non creo que fagamos nada especial. Onte chamáronme e xa o lunes vindeiro vanme facer a probar no ril. Se 
-          todo sae ben, poderei quitar a nefrostomía (supoño que o martes) De verdad, non sabedes as gañas que teño de quitarme esto. Mentalmente
-          estou agotado de cargar coa bolsa a todas partes e co medo de darme tiróns ou que se infecte algo. 
-      </p>
-
-  
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-<article id="03/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">03/12/2023</h5></div>
-  <p class="card-text text-muted">Xa pasou o primeiro fin de semana de nadal. O sábado fun coa miña dona a Porriño a mercar unas táboas para facer uns estantes 
-      na cociña. A verdade é que non temos nin idea de obras, estantes, madeiras nin de nada, pero imos tirar adiante e a ver como sae.
-      É decir, en principio non é máis que facer uns buratos co taladro na parede e listo, pero hoxe tiven pesadelos con que o estante 
-      era demasiado flouxo para todo o peso que lle queremos poñer enrriba (os robots de cociña que non usamos nunca) e teño 
-      medo de que caia todo enriba da TV, da mesa e de nos.</p>
-  <p class="card-text text-muted">Polo demáis todo segue igual que sempre. O domingo pola mañá tiven moita dor de ril pero por sorte pasouse cun calmante. Despois
-      fumos tomar un café cos meus pais, o que sempre é ben. Aínda que non falemos de nada importante é importante vernos de cando en vez.
-  </p>
-  <p class="card-text text-muted">E nada, xa empeza outra semana. A ver como vai.</p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-<article id="30/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">30/11/2023</h5></div>
-  <p class="card-text text-muted">A verdade é que empezo a estar bastante canso mentalmente <a href="#18/11/2023" class="card mb-4 rounded shadow-sm border mx-3">desta nefrostomía</a>. Estame a agotar. É un auténtico coñazo ter que andar coa
-      bolsa a todas partes e durmindo solo dun lado. En fin. Non sei a que esperan para chamarme e darme a cita para a proba que me teñen
-      que facer. Aínda verás que saldrá mal e terei que estar un mes máis con esta colita colgando. Mátome.
-  </p>
-  <p class="card-text text-muted">Non hai máis novedades na miña vida.</p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-
-<article id="28/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">28/11/2023</h5></div>
-  <p class="card-text text-muted">Vale, sei que levo unos cantos días sen actualizar, pero é que na miña vida pasou a cantidade de cero (0) unidades de cousas.
-      Ao final, o que estou a facer e levantarem de cama, traballar, ver <a href="#21/11/2023" class="card mb-4 rounded shadow-sm border mx-3">a nova TV</a> e durmir. E ollo, que tampouco é cousa doada.</p>
-  <p class="card-text text-muted">Boto en falta a miña instancia persoal de ActivityPub (Firefish) pero non son quen de recuperala. E ademáis, xa me está
-      a dar toda a pereza do mundo volver a ter o ordenador acendido 24x7, sen SAI e sen backup. Se perdo o tempo recuperándola agora
-      estou seguro de que tarde ou temprano volverá a pasarme o mesmo. Mellor deixalo como está e deixar os servidores os que teñen
-      tempo e recursos para atendelos.</p>
-      <p class="card-text text-muted">Por outra banda non teño máis novidades. Sigo coa nefrostomía e con pouca paciencia con ela. Aínda non me chamaron para a probar
-          e xa verás como ao final non me chaman ata o último día. Paciencia.
-      </p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-
-<article id="24/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">24/11/2023</h5></div>
-  <p class="card-text text-muted">Hoxe non fixen nada especial. A traballar toda a mañá. Os venres non traballo pola tarde así que estiven a probar a TV nova, que aínda 
-      non lle saquei todo o proveito. Onte téñenme que chegar un cable HDMI que espero que teña pouca latencia, e o un control remoto
-      para o audio, xa que de agora non lle funcionan os botóns.
-  </p>
-  <p class="card-text text-muted">Pola tarde fomos o centro comercial a vender rifas coas nenas a nos atopamos co meu cuñado. E logo nada, xa para casiña.</p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-<article id="23/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">23/11/2023</h5></div>
-  <p class="card-text text-muted">Hoxe tiven que volver a urxencias por dor no ril. Pero vamos, que me fixeron unos análises que estaban ben e que se tiña dor 
-  podría ser normal por todas as cousas que teño metidas agora mesmo. Calmantes e para casa. Logo recolleume o meu pai e fomos
-  a recoller a miña sobriña que tiña adestramento. Non estivo mal o día, pero preferíría non ter máis dor.
-  </p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-
-<article id="21/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">21/11/2023</h5></div>
-  <p class="card-text text-muted">Hoxe entregáronme a TV nova e non se me ocorreu mellor serie para estrenala que con "Se ha escrito un crimen" de Jessica Fletcher. 55 pulgadas de TV
-      ver unha serie en 4:3 con resolución de 500 e pico ahaha. O punto é que quizáis a TV sirva para empezar a pasar máis tempo sentado no sofá
-  ao carón da miña dona en vez de sentado na silla do ordenador. Veremos.</p>
-  <p class="card-text text-muted">Por outra banda, sigo coa nefrostomía e a verdade é que se me está a facer algo pesado esto. Non doe, pero é un coñazo cargar coa
-      bolsa por tódalas partes e sempre teño risco de que se me solte ou lle pase algo á bolsa.
-  </p>
-  <p class="card-text text-muted">Quero recordar un pouco un resumo do que me pasou as últimas dúas semanas:</p>
-      <ul role="list">
-          <li>Estiven ingresado no hospital 8 días.</li>
-          <li>12 horas en urxencias (foron duras, as peores)</li>
-          <li>Unha operación no ril.</li>
-          <li>Unha nefrostomía (que aínda levo e levarei un par de semanas máis)</li>
-          <li>Rompeuseme a pantalla do mobil.</li>
-          <li>Rompeuseme a TV do salón.</li>
-          <li>Fellecemento do meu cuñado.</li>
-      </ul>
-      <p class="card-text text-muted">Bueno, espero que xa esté ben polo de agora. A verdade é que está sendo un fin de ano duro. Pero hai que tirar adiante. Agora xa estou a traballar
-      de novo xa que pedín a alta voluntaria, así que vendrá moi ben recuperar a rutina pouco a pouco. Sen esquecer a miña irmá, coa que falo todos os días,
-      aos meus pais e por suposto a miña dona. A todos os quero infinito.
-  </p>      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-
-<article id="20/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-      <h5 class="card-title mb-0 fw-bold">20/11/2023</h5></div>
-      <p class="card-text text-muted">O enterro xa acabou e foi tan duro como cría que ía ser. Porén, creo que a nosa familia quedou máis unida agora. Agora queda, se cadra, o máis difícil,
-          que é continuar as nosas vidas sin él. Ogallá poidera axudar máis á miña irmá. Agora mesmo teño moitas gañas de decirlle a toda a miña familia que a 
-          quero moito
-      </p>
-      <p class="card-text text-muted">Por outra banda, ao despertar hoxe atopamos o TV do salón no chan. Así que a noite, ao volver do enterro, mercamos unha tele nova de 55" no Star de 
-          aquí cerca. A traen mañana pola tarde, así que temos que esperar un pouco a ver como queda. A verdade, non é que nesta casa vexamos moito a tele
-          pero o salón parece máis baleiro (demasiado) sin él. O modelo que escollimos foi o TX-55MX710E e custounos 399€ + 24€ por traela e montala en casa.
-</p>      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-<article id="19/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-  <h5 class="card-title mb-0 fw-bold">19/11/2023</h5></div>
-  <p class="card-text text-muted">Onte morreu un dos meus cuñados. E foi duro, moi duro. Unha boa bofetada de realidade. Sabiamos que nalgún momento tiña que ocorrer, pero creo que
-      sempre tiñamos algo de esperanza en que o final fora outro. Aínda non o creo do todo.
-</p>      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article><br>
-
-
-<article id="18/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-<h5 class="card-title mb-0 fw-bold">18/11/2023</h5></div>
-    <p class="card-text text-muted">Pois levo un tempo sen actualizar o blogue, pero teño desculpa. A semana pasada tiña unha interevención quirúrxica sinxela, a priori, que foi mal.
-        Un dos puntos que me deron no ril soltouse, ou puxeron puntos de menos, quen sabe, porque o doutor non dou explicación ningunha. Así que, unha vez
-        dado de alta, tiven que volver por urxencias e quedarme ingresado 5 días máis. O consecuencia do punto solto foi que o ril tiña unha fuga de orina 
-        por todo o vientre, barriga, etc... Pasino mal, moi mal, con moita dor que tardou moitas horas en irse e que precisou doutra intervención para 
-        arranxalo. Agora, teño que estar un mes cunha nefrostomía. É un tubo que sae do meu ril hacia o exterior a través das miñas costas e deposita
-        a orina nunha bolsa que teño aos meus pes. En fin, un caos.
-    </p>
-    <p class="card-text text-muted">O luns xa volvo a traballar e polo menos terei a cabeza un pouco máis ocupada e olvidareime de todo este pesadelo.</p>
-    <p class="card-text text-muted">Por certo, non esquecerei nunca a miña experiencia de 12 horas en urxencias. Con nula privacidade, escoitando berros, queixaduras, xente
-        que estaba sola, xente con problemas mentais... Tamén aos que foron os meus compañeiros de habitacións, os únicos que nos chamabamos polos nosos
-        nomes. Porque para o persoal sanitario non éramos máis que un número de habitación cun número de cama.
-    </p>
+        </div>
         <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-  <br>
-  <article id="05/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-    <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-    <h5 class="card-title mb-0 fw-bold">05/11/2023</h5></div>
-    <p class="card-text text-muted">Ocorréuseme un xogo que podería estar ben. Trátase dun "organizador de tráfico". É decir, por exemplo tes un mapa en 2D
-        onde ao darlle ao Play aparecen coches facendo unha ruta para chegar ao seu destiño. Entón, atascan. Tes que darlle a stop
-        e poñer unhas sinais dadas no sitio correcto para que os coches o respeten e poidan chegar au seu destiño sen atascar e sen 
-        chocarse. </p>
-        <p class="card-text text-muted">A parte mala é que non teño demasiados coñecementos de Godot como para facelo, tería que aprender demasiado e non teño tanto
+          <span class="badge bg-light text-secondary">#Videoxogos</span>
+          <span class="badge bg-light text-secondary">#GTA</span>
+        </div>
+        </div>
+      </article>
+      <br>
+
+
+
+
+
+
+      <article id="02/06/2025" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">02/06/2025</h5>
+          </div>
+          <p class="card-text text-muted">Este fin de semana entrei nun Casino por primeira vez aquí na Galiza. Non sei
+            se se lledebería chamar casino a isto, porque máis ben era unha
+            sala coas máquinas de slots, apuestas e unha cafetería. No centro da sala tamén había as típicas mesas da
+            ruleta e do black jack. Ao final
+            gañamos 6 € así que, pos nin tan mal. Teño gañas de ir ao Casino de Vigo o mes que ven, creo que é máis
+            grande e ten máis cousas. O plan sería
+            máis que nada tomar algo nel, algún coctel ou algo así. Por sorte non son moito de apostar nin de xogar ás
+            loterías así que non teño medo
+            de perder demasiados cartos.
+          </p>
+
+        </div>
+        <div class="text-end mt-3">
+          <span class="badge bg-light text-secondary">#Reflexión</span>
+          <span class="badge bg-light text-secondary">#Galiza</span>
+        </div>
+        </div>
+      </article>
+      <br>
+
+
+
+
+      <article id="12/05/2025" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">12/05/2025</h5>
+          </div>
+          <p class="card-text text-muted">Hai uns días saquei unha nova versión de U-la Carmela para itch.io Non a quero
+            meter na Play Store porque aparece o meu enderezo completo
+            e teño que pagar 25 eurazos se quero facer unha nova conta e transferir as miñas aplicacións a ela. Polo
+            tanto, de momento solo está publicitada
+            en itch.io .</p>
+          <p>Por outar banda, todo segue como sempre. A miña vida é aburrida e non teño moitas novedades así que así van
+            pasando os días. Esta fin
+            de semana estiven a probar un auto host de Ghost, un sistema de blogs, e tamén pusen en liña a miña
+            biblioteca de Calibre de xadrez, pero
+            teño que ter o ordenador encendido para que funcione o que non me mola nada. Xa verei como fago.
+          </p>
+          <p>Hoxe non traballo de normal porque a miña dona ten unha cita médica e vou a axudala. Porén, estou de
+            guardia así que traballarei na sombra.</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+
+
+      <article id="22/01/2025" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">22/01/2025</h5>
+          </div>
+          <p class="card-text text-muted">Hoxe soñei que a illa de Toralla volvía ser un montón de area asomando por
+            enriba do mar, sen edificios nin chalets, e non se me ocorre
+            un soño máis fermoso.</p>
+
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+
+      <br>
+
+      <article id="22/12/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">22/12/2024</h5>
+          </div>
+          <p class="card-text text-muted">Este ano gastei un montón de cartos no nadal. Espero que pague a pena.</p>
+
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+
+      <br>
+
+
+      <article id="22/09/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">22/09/2024</h5>
+          </div>
+          <p class="card-text text-muted">Onte fun xogar outro torneo de Xadrez na cidade das Burgas. En principio foi o
+            último torneo que xogarei este ano pois a partires de agora
+            xa vou deixar de ter tanto tempo libre para poder ir. O caso é que non me foi tan mal, de feito fixen 3/6 o
+            que está bastante ben. Pode que eu
+            non sexa moi esixente cos puntos que quero, pero tengo en conta o pouco tempo que levo "en serio" e que xogo
+            contra persoas que están en clubs
+            e xogan case tódolos días, pois para min ata o mínimo punto é moi importante. Eu son autodidacta na miña
+            casa, aprendendo a base de proba e error
+            e vendo vídeos en YouTube. De feito, sempre que vou a un torneo penso que todo o que sexa conseguir ao menos
+            un empate está ben.</p>
+          <p class="card-text text-muted">O que non me gustou moito foi a miña última partida, onde xoguei contra un
+            rapaz e lle fixen unha partida perfecta, unha liña teórica que
+            xamais pensei que se fora a dar na vida real, pero así foi. Dínlle mate en apenas unhas poucas xogadas e o
+            rapaz acabo chorando. Quizáis non
+            chorando do todo pero sí coas mans nos ollos e quedou na mesa un bo rato. Eu sentínme mal por él, porque
+            para él foi unha forma de perder
+            un pouco humillante, e, bueno, intente subirlle os ánimos e decirlle que pensara en positivo: seguro que
+            nunca máis ía volver perder
+            deste xeito. É o malo dos torneos onde xogamos todos contra todos, para os maiores é duro perder contra un
+            rapaz pero para os rapaces tamén
+            pode ser duro se hai moita diferenza de nivel</p>
+          <p class="card-text text-muted">Pero bueno, pensando en que a vida segue a verdade é que disfrutei moito do
+            torneo e espero ter posibilidades de volver o ano que ben.</p>
+
+          </p>
+
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="24/08/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">24/08/2024</h5>
+          </div>
+          <p class="card-text text-muted">Acabáronse as vacacións e aquí seguimos na mesma rutina. Este ano as
+            vacacións, teño que recoñecer, que non me gustaron demasiado.
+            Estivemos nun camping e ao final é facer o mesmo que temos que facer na casa pero noutro lado. Hai que
+            face-la compra, a comida, limpar,
+            ordenar a casa.. bueno un coñazo. Non sentín que desconectara moito. Logo, a semana pasada fumos a un parque
+            acuático en Portugal, o que
+            está máis preto de Vila-Real e está bastante chulo. A verdade é que tivemos sorte porque foi chegar, mercar
+            as entradas e esgotáronse. Se chegamos
+            cinco minutos máis tarde, quedamos sen parque.</p>
+          <p class="card-text text-muted">Cambiando de tema, vendín o meu coche vello. Tiña xa 26 anos e agora quedei co
+            coche antigo do meu pai, que ten a metade. É unha mágoa
+            non poder mercar un coche novo pero é que están todos carísimos. O meu pai si mercou un novo pero aínda non
+            llo deron. A verdade é que
+            non boto de menos o meu coche antigo, foron moitos anos con él pero xa estaba canso del. Para min, era
+            demasiado grande e tiña que
+            maniobrar moito cada vez que quería aparcado ou facer calquera cousa.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+
+      <br>
+      <article id="10/06/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">10/06/2024</h5>
+          </div>
+          <p class="card-text text-muted">Bueno xa hai varios días que non escribo nada pero en verdade é que non teño
+            nada que contar. Esta fin de semana
+            estivemos en Pontevedra cun torneo de Tae Kwon Do das rapazas e logo tivemos unha pequena festa de
+            cumpreanos porque, para a miña
+            desgracia, sigo cumprindo anos irremediablemente. Non os levo tan mal como pensaba. Creo que o peor foi
+            cando cumprín 40 anos e
+            de súpeto o tempo pareceuse acelerar. Agora xa o levo mellor. É certo que ir ao ximansio estame a axudar
+            porque mentalmente axuda
+            bastante atoparse ben físicamente. Quero decir: se te ves ben físicamente, mentalmente estarás mellor.
+          </p>
+          <p class="card-text text-muted">Por outra banda, agora mesmo estou a aforrar para mercarme unha x-box. Canto
+            teña todos os cartos reunidos tendréi dúbidas
+            sobre se mercala ou non, é decir, sobre se gastar os cartos aforrados niso, ou se mercar unha playstation ou
+            se gastalos en algo
+            máis productivo. O tema de coller a x-box ven sobre todo para poder reproducir blueray, porque empezo a
+            querer ter películas en formato
+            físico, e tamén para poder xogar ao GTA VI cando salga, que lle teño moitas ganas. De momento, xa teño
+            aforrado case a metade.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="01/06/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">01/06/2024</h5>
+          </div>
+          <p class="card-text text-muted">Bueno vou escribir algunha entrada máis, antes de que pasen máis días con esto
+            baleiro. En verdade, estos últimos días non pasou
+            nada especial. Sigo traballando, facendo ximnasio e un pouco o de sempre. Estos días tiveron as festas no
+            colexio e hoxe
+            estivemos en Nigrán celebrando un cumpreano. Mañá temos outro.</p>
+
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="27/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">27/05/2024</h5>
+          </div>
+          <p class="card-text text-muted">Pois hoxe por fin reunín un pouco de valentía e afouteza e fun ao ximnasio.
+            Custoume bastante porque sempre é difícil chegar a un
+            sitio onde non coñeces a ninguén, nin cómo é o sitio, mentres que todos os que están ahí xa o coñecen todo e
+            a todos. Estiven un
+            pouco incómodo porque o monitor fíxome unha táboa de exercicios e logo marchou porque acabou o seu turno, e
+            eu non coñecía quen era o monitor
+            que entraba, polo que estiven uns 15 minutos sen facer nada porque non sabía a qué máquinas tiña que ir ni
+            como funcionaban, foi bastante
+            incómodo. Logo xa me din conta de quen era o novo monitor e me acheguei a él para que me seguira explicando.
+            Fixen un pouco de pernas (vou
+            sobre todo polos nocellos) e por sorte tampouco acabei moi canso, porque non quero ter maniotas. O bo que
+            ten ese ximnasio é que polo mesmo
+            prezo tamén ten piscina, así que igual tamén me empapo algún día.
+          </p>
+          <p class="card-text text-muted">Polo demáis sigo sen máis novedades. Sigo alternando entre Linux e Windows no
+            meu ordenador según me pete. A verdade é que estou
+            desexando marchar xa de vacacións. Apetéceme estar tirado ao carón da praia sen facer nada, xogando co mobil
+            as miñas partidiñas de xadrez
+            e deixando que as rapazas anden por ahí xogando con novos amigos.
+          </p>
+
+
+
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+
+      <article id="26/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">26/05/2024</h5>
+          </div>
+          <p class="card-text text-muted">Bueno, creo que ao final vou dar o paso de apuntar a un ximnasio. Non o fago
+            por mazarme, se non porque as dores que teño no lombo cada vez vais a máis. E sei
+            que a orixe desta dor ven dos nocellos, así que tocar facelos fortes para que o resto do corpo esté ben. Ao
+            final, non fun quen de convencer á miña dona
+            para que veña conmigo ao ximansio pero espero que se anime máis adiante. Non a quero presionar con este
+            tema, se quere vir pois pasarémolo ben xuntos.
+          </p>
+          <p class="card-text text-muted">Por outra banda, xa dei coa tecla para instalar Linux no meu ordenador.
+            Custoume un pouco máis do esperado, pero xa teño un Ubuntu orientado ao gaming
+            instalado. O que non me gustou é que non me fixo unha partición LVM así que se algún día dou o salto, quero
+            volver a formatealo todo para que quede cunha
+            partición LVM e todo ben. Non é que tivera ningunha necesidade de instalar Linux, pero tampouco de usar
+            Windows. En todo caso, non o borrei. O Windows
+            segue ahí para cando queira usar algún xogo o programa que non funcione, ou non funcione ben, en Linux.
+            Ademáis, teño instalado o Project Zomboid e estouno a probar,
+            porén, non instalei ningún xogo que sexa exixente tipo The Wither ou algo así. Pero teño a sensación de que
+            non vai a ir tan ben como en Windows.
+          </p>
+          <p class="card-text text-muted">Laboralmente sigo igual que sempre. Esta semán teño guardia así que tocará
+            durmir pouco.</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+
+
+      <article id="22/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">22/05/2024</h5>
+          </div>
+          <p class="card-text text-muted">Hoxe confirmei a miña teoría de que a rede social de Mastodon é moi boa. O
+            respecto a interacción son moito mayores
+            que na outra rede do paxariño. Hoxe <a href="https://mastodon.gal/@Hugo/112484819032585455">preguntei por
+              algún videoxogo</a> o que me poidera enganchar e enseguida tiven un montón
+            de respostas, o que volvo a agradecer a todos dende aquí. Coñecín algún xogo do que non sabía, e aínda que
+            ao final decanteime polo Kenshi
+            ao final non resultou ser un xogo que me enganchase tanto como parecía. É difícil empezar, os gráficos non
+            son unha marabilla, aínda que polo menos
+            está en castellano.
+          </p>
+          <p class="card-text text-muted">A miña búsqueda dun xogo que me atrape segue en pe.</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="20/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">20/05/2024</h5>
+          </div>
+          <p class="card-text text-muted">Bueno, hoxe foi un día normal. Cansado despois de traballar porque ao final
+            tantos días seguidos sen facelo (o venres foi festa)
+            pois agora custa coller o ritmo de novo. Hoxe, no mastodon, descubrín o <a
+              href="https://owncast.online/quickstart/">OwnCast</a> que é para
+            emitir en vídeo dende a tua propia plataforma. Non ten mala pinta, pero a verdade é que non me vería ninguén
+            polo que non sei se tería
+            moito sentido.</p>
+          <p class="card-text text-muted">Aínda estou a pensarme se meterme no ximnasio. Non quero meterme e que logo me
+            custe moito ir e deixalo. Debería ir, porque
+            teño que exercitar os meus xeonllos para poder sentarme ben e que deixe de doerme as costas.
+          </p>
+          <p class="card-text text-muted">Por outra banda, hoxe empecei un novo proxecto en Godot pero non sei se serei
+            quen de rematalo. A idea é facer algo parecido a
+            un <i>Dónde está Carmen Sandiego</i> pero en versión galega, viaxando pola xeografía galega. A idea parecéme
+            boa pero, como dixen, non
+            sei se serei capaz de facelo.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="19/05/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">19/05/2024</h5>
+          </div>
+          <p class="card-text text-muted">E con esta entrada queda inaugurada o meu blogue. Agora xa é o final do día e
+            a verdade é que estou bastante contento con como quedou
+            esta páxina. Entendo que ao ser HTML puro pois é un poco máis complicado tela actualizada, porque é todo
+            picar código e nin tan sequeira
+            uso un editor WYSIWYG. Se alguén sabe dun que sexa bo e de código aberto encantaríame que mo dixera por
+            Mastodon (enlace no footer)
+          </p>
+          <p class="card-text text-muted">Por outra banda hoxe é domingo e tampouco é que teña moito que contar. Teño
+            pensado ir ao ximnasio a partires da semana que ven
+            a ver se melloro un pouco o meu físico, porque estou a piques de chegar a unha idade que en canto mellor
+            entres, máis tardas en caer.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="18/01/2024" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">18/01/2024</h5>
+          </div>
+          <p class="card-text text-muted">Quizáis o tema é que non se me da ben esto de ser constante a hora de escribir
+            cousas. Tamén pode ser que a miña vida seña tan aburrida que non teño nada intersante que contar.
+            Cousas que pasaron neste mes de xaneiro:
+          <p class="card-text text-muted">
+          <menu>
+            <li>Os Reis Magos trouxéronme moitas cousas. O que máis me gustou foi un google nest, unha pantalla con
+              altofalante que uso como despertador. Agora podo poñer música scifi mentres leo.</li>
+            <li>A miña vista segue mal, bastante mal. O peor é que non hai unha solución barata para arranxalo. As
+              lentes de contacto ríxidas custan un ollo da cara. </li>
+          </menu>
+
+          E creo que nada máis, ou non me lembro agora mesmo.</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+
+
+      <article id="24/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">24/12/2023</h5>
+          </div>
+          <p class="card-text text-muted">Non me gusta o nadal. Para min, é a peor época do ano. A min gústame a rutina,
+            facer as mesmas cousas os mesmos días, e o nadal e romper a
+            rutina case cada día. Hoxe é festivo, mañán non, pasado si, agora fin de semana... Unha tolería. Non me
+            sinto ben. Quero os meus horarios,
+            as miñas ceas acougadas a mesma hora, estar durmindo a medianoite... E, ademáis, vai frío. </p>
+
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+
+      <article id="20/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">20/12/2023</h5>
+          </div>
+          <p class="card-text text-muted">Hoxe quitáronme por fin o último catéter que tiña dentro. Non vou negar que
+            foi doloros e bastante noxento. Ademáis sentín como
+            perdín toda a miña dignidade tendo que quedar espido de cintura para abaixo diante do médico e dúas mulleres
+            máis. Comprendo que ten
+            que ter así, pero non me fago a iso. Por sorte, se todo vai ben xa non volverei a pisar un centro médico en
+            moito tempo. Agora mesmo xa so me doe ao mexar, porque ao quitarme o catéter pois é evidente que o pitiño
+            agora está resentido. Nun par de días
+            estarei mellor.</p>
+          <p class="card-text text-muted">Por certo, que levo un par de días enganchado ao <em>Larry Suite wet dreams
+              don't dry</em> e xa non lembraba o difíciles que poden chegar
+            a ser os click & point. Non deixo de quedar atascado cada pouco e cando resolvo algún puzzle e para volver a
+            quedarme atascado outra vez.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+
+      <article id="19/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">19/12/2023</h5>
+          </div>
+          <p class="card-text text-muted">Levo moitos días sen actualizar pero é que tampouco teño ganas de facelo
+            actualmente. Nos últimos días por fin quitáronme a
+            <a href="#18/11/2023" class="card mb-4 rounded shadow-sm border mx-3">nefrostomía</a> do todo, así que agora
+            xa ando sen bolsa e sen cables colgando. Aínda teño pendente a retirada dun catéter que teño
+            dentro e que me está a molestar bastante, pero teño que ter paciencia polo menos ata mañá.
+          </p>
+          <p class="card-text text-muted">Por outra banda, este fin de semana pasada tivemos competición de Taekwondo en
+            Ourense e estivo moi ben, as rapazas fixéronno xenial.
+            Iso si, papamos moito frío. Sobre todo no coche porque a calefacción aínda non lle funciona moi ben.
+          </p>
+          <p class="card-text text-muted">Agora mesmo estou de vacacións, así que estou a aproveitar para ver algunhas
+            películas e series que tiña pendentes. Onte vin
+            Mission Impossible 1 e xa teño a dúas lista para ver cando poida. Tamén baixeo a primeira tempada de The
+            Wire aínda que non sei se
+            aguantarie para vela. Xa o intentei un par de vaces e nunca fun quen de pasar do primeiro capítulo.
+          </p>
+          <p class="card-text text-muted">Xa para rematar, non sei se o comentei pero o outro día montamos uns estantes
+            novos na cociña e tamén montamos a TV nova na parede do salón.
+            O da cociña foi case todo ben. Ao final na ferretería recomendáronme uns tacos moito mellores que os que
+            tiña. Paga a pena non ir a mercar
+            cousas destas no chino. Respecto a TV, furei atravesando a parede, pero nada que non teña arranxo. Un pouco
+            de aguaplast e xa quedaron
+            os buratos tapados.</p>
+
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+
+      <article id="10/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">10/12/2023</h5>
+          </div>
+          <p class="card-text text-muted">Estou canso de traballar. Estou canso de facer guardias. Estou canso de por o
+            traballo por enriba da familia. De que me chamen as 12 da
+            noite, as 4 da madrugada e as 8 da mañá. Non deberiamos ter que traballar tanto para poder ter un salario
+            digno.
+          </p>
+          <p class="card-text text-muted">Por otra banda, a miña dona máis eu estamos a pensar en como aislar térmica y
+            acústicamente un dos dormitorios. Finalmente, creo que
+            imos poñer 2cm de corcho contra a parede e unha táboa de 1,5cm de agloremeado por diante. En teoría, o
+            dormitorio quedaría ben
+            aillado acústicamente e sobre todo térmicamente, porque é unha habitación que agora mesmo é moi fría e ten
+            bastante humidade. Según
+            o presuposto en Leroy Merlin, poderiamos ter todo o material por algo máis de 400 € Logo o tendremos que
+            montar nos, que é o máis
+            difícil dado que non temos moita experiencia en bricolaxe. Pero ben, o camiño faise andando.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="07/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">07/12/2023</h5>
+          </div>
+          <p class="card-text text-muted">Pois nada, as rapazas levan dende o martes 5 fora de casa. Deunos moito medo,
+            sobre todo a viaxe de ida porque foron ata Alacante
+            do tirón e pola noite, así que tivemos medo de que lles fora a pasar algo. Agora xa están volvendo así que
+            estamos máis tranquilos.
+            A competición (Campionato de Españita) non lles foi mal. Non gañaron pero acadaron moita experiencia e o
+            pasaron moi ben cos seus
+            amigos do club. Ademáis, botáronnos moito de menos o que sempre está ben : ) Esperamos que a experiencia
+            lles valiese para ser
+            algo máis independientes e aprender a tomar decisión por elas mesmas.</p>
+          <p class="card-text text-muted">Por outra banda, nos estivemos solos en casa estos días. Unha sensación
+            bastante rara porque ao terminar de traballar xa non
+            tiñamos nada que facer en todo o día: non había rapazas a quen levar a algures, ou recoller, ou facer
+            deberes. Pero, a verdade,
+            xa temos moitas ganas de que estén aquí de volta e poderlles dar unha aperta moi grande. </p>
+          <p class="card-text text-muted">Este fin de semana non creo que fagamos nada especial. Onte chamáronme e xa o
+            lunes vindeiro vanme facer a probar no ril. Se
+            todo sae ben, poderei quitar a nefrostomía (supoño que o martes) De verdad, non sabedes as gañas que teño de
+            quitarme esto. Mentalmente
+            estou agotado de cargar coa bolsa a todas partes e co medo de darme tiróns ou que se infecte algo.
+          </p>
+
+
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+      <article id="03/12/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">03/12/2023</h5>
+          </div>
+          <p class="card-text text-muted">Xa pasou o primeiro fin de semana de nadal. O sábado fun coa miña dona a
+            Porriño a mercar unas táboas para facer uns estantes
+            na cociña. A verdade é que non temos nin idea de obras, estantes, madeiras nin de nada, pero imos tirar
+            adiante e a ver como sae.
+            É decir, en principio non é máis que facer uns buratos co taladro na parede e listo, pero hoxe tiven
+            pesadelos con que o estante
+            era demasiado flouxo para todo o peso que lle queremos poñer enrriba (os robots de cociña que non usamos
+            nunca) e teño
+            medo de que caia todo enriba da TV, da mesa e de nos.</p>
+          <p class="card-text text-muted">Polo demáis todo segue igual que sempre. O domingo pola mañá tiven moita dor
+            de ril pero por sorte pasouse cun calmante. Despois
+            fumos tomar un café cos meus pais, o que sempre é ben. Aínda que non falemos de nada importante é importante
+            vernos de cando en vez.
+          </p>
+          <p class="card-text text-muted">E nada, xa empeza outra semana. A ver como vai.</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+      <article id="30/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">30/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">A verdade é que empezo a estar bastante canso mentalmente <a
+              href="#18/11/2023" class="card mb-4 rounded shadow-sm border mx-3">desta nefrostomía</a>. Estame a agotar.
+            É un auténtico coñazo ter que andar coa
+            bolsa a todas partes e durmindo solo dun lado. En fin. Non sei a que esperan para chamarme e darme a cita
+            para a proba que me teñen
+            que facer. Aínda verás que saldrá mal e terei que estar un mes máis con esta colita colgando. Mátome.
+          </p>
+          <p class="card-text text-muted">Non hai máis novedades na miña vida.</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+
+      <article id="28/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">28/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Vale, sei que levo unos cantos días sen actualizar, pero é que na miña vida
+            pasou a cantidade de cero (0) unidades de cousas.
+            Ao final, o que estou a facer e levantarem de cama, traballar, ver <a href="#21/11/2023"
+              class="card mb-4 rounded shadow-sm border mx-3">a nova TV</a> e durmir. E ollo, que tampouco é cousa
+            doada.</p>
+          <p class="card-text text-muted">Boto en falta a miña instancia persoal de ActivityPub (Firefish) pero non son
+            quen de recuperala. E ademáis, xa me está
+            a dar toda a pereza do mundo volver a ter o ordenador acendido 24x7, sen SAI e sen backup. Se perdo o tempo
+            recuperándola agora
+            estou seguro de que tarde ou temprano volverá a pasarme o mesmo. Mellor deixalo como está e deixar os
+            servidores os que teñen
+            tempo e recursos para atendelos.</p>
+          <p class="card-text text-muted">Por outra banda non teño máis novidades. Sigo coa nefrostomía e con pouca
+            paciencia con ela. Aínda non me chamaron para a probar
+            e xa verás como ao final non me chaman ata o último día. Paciencia.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+
+      <article id="24/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">24/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Hoxe non fixen nada especial. A traballar toda a mañá. Os venres non traballo
+            pola tarde así que estiven a probar a TV nova, que aínda
+            non lle saquei todo o proveito. Onte téñenme que chegar un cable HDMI que espero que teña pouca latencia, e
+            o un control remoto
+            para o audio, xa que de agora non lle funcionan os botóns.
+          </p>
+          <p class="card-text text-muted">Pola tarde fomos o centro comercial a vender rifas coas nenas a nos atopamos
+            co meu cuñado. E logo nada, xa para casiña.</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+      <article id="23/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">23/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Hoxe tiven que volver a urxencias por dor no ril. Pero vamos, que me fixeron
+            unos análises que estaban ben e que se tiña dor
+            podría ser normal por todas as cousas que teño metidas agora mesmo. Calmantes e para casa. Logo recolleume o
+            meu pai e fomos
+            a recoller a miña sobriña que tiña adestramento. Non estivo mal o día, pero preferíría non ter máis dor.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+
+      <article id="21/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">21/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Hoxe entregáronme a TV nova e non se me ocorreu mellor serie para estrenala
+            que con "Se ha escrito un crimen" de Jessica Fletcher. 55 pulgadas de TV
+            ver unha serie en 4:3 con resolución de 500 e pico ahaha. O punto é que quizáis a TV sirva para empezar a
+            pasar máis tempo sentado no sofá
+            ao carón da miña dona en vez de sentado na silla do ordenador. Veremos.</p>
+          <p class="card-text text-muted">Por outra banda, sigo coa nefrostomía e a verdade é que se me está a facer
+            algo pesado esto. Non doe, pero é un coñazo cargar coa
+            bolsa por tódalas partes e sempre teño risco de que se me solte ou lle pase algo á bolsa.
+          </p>
+          <p class="card-text text-muted">Quero recordar un pouco un resumo do que me pasou as últimas dúas semanas:</p>
+          <ul role="list">
+            <li>Estiven ingresado no hospital 8 días.</li>
+            <li>12 horas en urxencias (foron duras, as peores)</li>
+            <li>Unha operación no ril.</li>
+            <li>Unha nefrostomía (que aínda levo e levarei un par de semanas máis)</li>
+            <li>Rompeuseme a pantalla do mobil.</li>
+            <li>Rompeuseme a TV do salón.</li>
+            <li>Fellecemento do meu cuñado.</li>
+          </ul>
+          <p class="card-text text-muted">Bueno, espero que xa esté ben polo de agora. A verdade é que está sendo un fin
+            de ano duro. Pero hai que tirar adiante. Agora xa estou a traballar
+            de novo xa que pedín a alta voluntaria, así que vendrá moi ben recuperar a rutina pouco a pouco. Sen
+            esquecer a miña irmá, coa que falo todos os días,
+            aos meus pais e por suposto a miña dona. A todos os quero infinito.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+
+      <article id="20/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">20/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">O enterro xa acabou e foi tan duro como cría que ía ser. Porén, creo que a
+            nosa familia quedou máis unida agora. Agora queda, se cadra, o máis difícil,
+            que é continuar as nosas vidas sin él. Ogallá poidera axudar máis á miña irmá. Agora mesmo teño moitas gañas
+            de decirlle a toda a miña familia que a
+            quero moito
+          </p>
+          <p class="card-text text-muted">Por outra banda, ao despertar hoxe atopamos o TV do salón no chan. Así que a
+            noite, ao volver do enterro, mercamos unha tele nova de 55" no Star de
+            aquí cerca. A traen mañana pola tarde, así que temos que esperar un pouco a ver como queda. A verdade, non é
+            que nesta casa vexamos moito a tele
+            pero o salón parece máis baleiro (demasiado) sin él. O modelo que escollimos foi o TX-55MX710E e custounos
+            399€ + 24€ por traela e montala en casa.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+      <article id="19/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">19/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Onte morreu un dos meus cuñados. E foi duro, moi duro. Unha boa bofetada de
+            realidade. Sabiamos que nalgún momento tiña que ocorrer, pero creo que
+            sempre tiñamos algo de esperanza en que o final fora outro. Aínda non o creo do todo.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article><br>
+
+
+      <article id="18/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">18/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Pois levo un tempo sen actualizar o blogue, pero teño desculpa. A semana
+            pasada tiña unha interevención quirúrxica sinxela, a priori, que foi mal.
+            Un dos puntos que me deron no ril soltouse, ou puxeron puntos de menos, quen sabe, porque o doutor non dou
+            explicación ningunha. Así que, unha vez
+            dado de alta, tiven que volver por urxencias e quedarme ingresado 5 días máis. O consecuencia do punto solto
+            foi que o ril tiña unha fuga de orina
+            por todo o vientre, barriga, etc... Pasino mal, moi mal, con moita dor que tardou moitas horas en irse e que
+            precisou doutra intervención para
+            arranxalo. Agora, teño que estar un mes cunha nefrostomía. É un tubo que sae do meu ril hacia o exterior a
+            través das miñas costas e deposita
+            a orina nunha bolsa que teño aos meus pes. En fin, un caos.
+          </p>
+          <p class="card-text text-muted">O luns xa volvo a traballar e polo menos terei a cabeza un pouco máis ocupada
+            e olvidareime de todo este pesadelo.</p>
+          <p class="card-text text-muted">Por certo, non esquecerei nunca a miña experiencia de 12 horas en urxencias.
+            Con nula privacidade, escoitando berros, queixaduras, xente
+            que estaba sola, xente con problemas mentais... Tamén aos que foron os meus compañeiros de habitacións, os
+            únicos que nos chamabamos polos nosos
+            nomes. Porque para o persoal sanitario non éramos máis que un número de habitación cun número de cama.
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="05/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">05/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Ocorréuseme un xogo que podería estar ben. Trátase dun "organizador de
+            tráfico". É decir, por exemplo tes un mapa en 2D
+            onde ao darlle ao Play aparecen coches facendo unha ruta para chegar ao seu destiño. Entón, atascan. Tes que
+            darlle a stop
+            e poñer unhas sinais dadas no sitio correcto para que os coches o respeten e poidan chegar au seu destiño
+            sen atascar e sen
+            chocarse. </p>
+          <p class="card-text text-muted">A parte mala é que non teño demasiados coñecementos de Godot como para facelo,
+            tería que aprender demasiado e non teño tanto
             tempo libre. Pero bueno, a idea está ahí, todo é darlle unha volta.
-        </p>
+          </p>
 
-        <p class="card-text text-muted">Por outra banda, o día de onte non estivo tan mal. Pasámalo ben coas rapazas nos combates. O pavillón gustoume bastante, 
-            creo que é un dos mellores nos que estivemos en tódalas competicións. Falo do pavillón municipal de Pontevedra, ao carón do
-            estadio de Pasarón. É certo que chegamos moi cansos a casa, e demasiado tarde para o meu gusto. Pero pasar o día en familia 
+          <p class="card-text text-muted">Por outra banda, o día de onte non estivo tan mal. Pasámalo ben coas rapazas
+            nos combates. O pavillón gustoume bastante,
+            creo que é un dos mellores nos que estivemos en tódalas competicións. Falo do pavillón municipal de
+            Pontevedra, ao carón do
+            estadio de Pasarón. É certo que chegamos moi cansos a casa, e demasiado tarde para o meu gusto. Pero pasar o
+            día en familia
             sempre é ben.
-        </p>
-        <p class="card-text text-muted">Onte, ao chegar a casa, puiden ver na tele un pouco da final dos Libertadores entre Boca e o Fluminense no que gañaron os brasileiños. 
-            Nunca vira unha final deste torneo, así que... podemos decir que Logro Desbloqueado ;) 
-        </p>
-    </p>
-        <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-    
-<br>
-<article id="04/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-    <h5 class="card-title mb-0 fw-bold">04/11/2023</h5></div>
-    <p class="card-text text-muted">Hoxe temos que viaxar a Pontevedra para unha competición. Non teño moitas ganas de ir, pero espero ao menos que as nenas
-    gañen algunha competición. Oxalá o tomasen máis en serio.</p>
-<p class="card-text text-muted">Ademáis vai ser especial porque a súa nai non vai poder estar pola mañá polo seu traballo. Achegarase á tarde</p>
-      <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-<br>
-<article id="03/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
-  <div class="card-body">
-    <div class="d-flex align-items-center mb-2">
-      <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2" style="width: 36px; height: 36px;">
-        🗓️
-      </div>
-    <h5 class="card-title mb-0 fw-bold">03/11/2023</h5></div>
-    <p class="card-text text-muted">Boas tarde. Este é un diario online persoal sen ningunha pretensión de ningún tipo.
-    Empecei este blogue porque tiña ganas de ter un feito coa mínima programación necesaria. Non quería ter un wordpress cheo de cousas e que a web tardase
-    un século en cargar. </p>
-    <p class="card-text text-muted">Aínda non sei o que vou escribir aquí. Seguramente faga unha mezcla de todo o que se me vaia pasando: programación, cousas persoais, algún relato solto, etc.</p>
-    <p class="card-text text-muted">Polo de pronto, esta é a primeira entrada.</p>
-        <div class="text-end mt-3">
-      <span class="badge bg-light text-secondary">#Reflexión</span>
-      <span class="badge bg-light text-secondary">#Galiza</span>
-    </div>
-  </div>
-</article>
-</section>
-<p></p>
-<p></p>
+          </p>
+          <p class="card-text text-muted">Onte, ao chegar a casa, puiden ver na tele un pouco da final dos Libertadores
+            entre Boca e o Fluminense no que gañaron os brasileiños.
+            Nunca vira unha final deste torneo, así que... podemos decir que Logro Desbloqueado ;)
+          </p>
+          </p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+
+      <br>
+      <article id="04/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">04/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Hoxe temos que viaxar a Pontevedra para unha competición. Non teño moitas
+            ganas de ir, pero espero ao menos que as nenas
+            gañen algunha competición. Oxalá o tomasen máis en serio.</p>
+          <p class="card-text text-muted">Ademáis vai ser especial porque a súa nai non vai poder estar pola mañá polo
+            seu traballo. Achegarase á tarde</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+      <br>
+      <article id="03/11/2023" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-2">
+            <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+              style="width: 36px; height: 36px;">
+              🗓️
+            </div>
+            <h5 class="card-title mb-0 fw-bold">03/11/2023</h5>
+          </div>
+          <p class="card-text text-muted">Boas tarde. Este é un diario online persoal sen ningunha pretensión de ningún
+            tipo.
+            Empecei este blogue porque tiña ganas de ter un feito coa mínima programación necesaria. Non quería ter un
+            wordpress cheo de cousas e que a web tardase
+            un século en cargar. </p>
+          <p class="card-text text-muted">Aínda non sei o que vou escribir aquí. Seguramente faga unha mezcla de todo o
+            que se me vaia pasando: programación, cousas persoais, algún relato solto, etc.</p>
+          <p class="card-text text-muted">Polo de pronto, esta é a primeira entrada.</p>
+          <div class="text-end mt-3">
+            <span class="badge bg-light text-secondary">#Reflexión</span>
+            <span class="badge bg-light text-secondary">#Galiza</span>
+          </div>
+        </div>
+      </article>
+    </section>
+    <p></p>
+    <p></p>
 
 
 
@@ -817,14 +1050,104 @@ E creo que nada máis, ou non me lembro agora mesmo.</p>
 
 
 
-<p></p>
-<br>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <p></p>
+    <br>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const articles = document.querySelectorAll('article');
+      const tagContainer = document.getElementById('tag-filter-container');
+      const tags = new Set();
+
+      // Extract tags from articles
+      articles.forEach(article => {
+        const badges = article.querySelectorAll('.badge');
+        badges.forEach(badge => {
+          tags.add(badge.textContent.trim());
+          // Add click event to badges inside articles
+          badge.addEventListener('click', () => {
+            filterByTag(badge.textContent.trim());
+          });
+        });
+      });
+
+      // Create "All" button
+      const allBtn = document.createElement('button');
+      allBtn.className = 'btn btn-outline-primary btn-sm active filter-btn';
+      allBtn.textContent = 'Ver todos';
+      allBtn.addEventListener('click', () => filterByTag('all'));
+      tagContainer.appendChild(allBtn);
+
+      // Create button for each tag
+      Array.from(tags).sort().forEach(tag => {
+        const btn = document.createElement('button');
+        btn.className = 'btn btn-outline-secondary btn-sm filter-btn';
+        btn.textContent = tag;
+        btn.addEventListener('click', () => filterByTag(tag));
+        tagContainer.appendChild(btn);
+      });
+
+      function filterByTag(selectedTag) {
+        // Update button states
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          if (btn.textContent === selectedTag || (selectedTag === 'all' && btn.textContent === 'Ver todos')) {
+            btn.classList.add('active');
+            if (selectedTag === 'all') {
+              btn.classList.replace('btn-outline-primary', 'btn-primary');
+            } else {
+              btn.classList.replace('btn-outline-secondary', 'btn-secondary');
+            }
+          } else {
+            btn.classList.remove('active');
+            btn.classList.replace('btn-primary', 'btn-outline-primary');
+            btn.classList.replace('btn-secondary', 'btn-outline-secondary');
+          }
+        });
+
+        // Update badge highlights
+        document.querySelectorAll('.badge').forEach(badge => {
+          if (badge.textContent.trim() === selectedTag) {
+            badge.classList.add('badge-active');
+          } else {
+            badge.classList.remove('badge-active');
+          }
+        });
+
+        // Filter articles
+        articles.forEach(article => {
+          if (selectedTag === 'all') {
+            article.classList.remove('d-none');
+            // Remove <br> hiding if applicable
+            if (article.nextElementSibling && article.nextElementSibling.tagName === 'BR') {
+              article.nextElementSibling.classList.remove('d-none');
+            }
+          } else {
+            const articleTags = Array.from(article.querySelectorAll('.badge')).map(b => b.textContent.trim());
+            if (articleTags.includes(selectedTag)) {
+              article.classList.remove('d-none');
+              if (article.nextElementSibling && article.nextElementSibling.tagName === 'BR') {
+                article.nextElementSibling.classList.remove('d-none');
+              }
+            } else {
+              article.classList.add('d-none');
+              if (article.nextElementSibling && article.nextElementSibling.tagName === 'BR') {
+                article.nextElementSibling.classList.add('d-none');
+              }
+            }
+          }
+        });
+      }
+    });
+  </script>
+
+  <div id="footer-container"></div>
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- MAIN JS -->
+  <script src="../js/main.js"></script>
 </body>
-<p></p>
-<footer>HUGO.GAL dende 2023 - <a rel="me" href="https://mastodon.gal/@Hugo">Mastodon</a></footer>
+
 </html>
-
-
