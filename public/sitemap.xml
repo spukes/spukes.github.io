@@ -35,6 +35,42 @@
     <loc>http://localhost:1313/tags/galiza/</loc>
     <lastmod>2025-06-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blogue/2025-05-12/</loc>
+    <lastmod>2025-05-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2025-01-22/</loc>
+    <lastmod>2025-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-12-22/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-09-22/</loc>
+    <lastmod>2024-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-08-24/</loc>
+    <lastmod>2024-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-06-10/</loc>
+    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-06-01/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-05-27/</loc>
+    <lastmod>2024-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-05-26/</loc>
+    <lastmod>2024-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-05-22/</loc>
+    <lastmod>2024-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-05-20/</loc>
+    <lastmod>2024-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-05-19/</loc>
+    <lastmod>2024-05-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/cine/</loc>
     <lastmod>2024-05-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -50,11 +86,80 @@
     <loc>http://localhost:1313/libros/la-larga-marcha/</loc>
     <lastmod>2024-05-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/libros/la-playa-de-los-dragones/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/libros/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/libros/o-asasinato-de-roger-ackroyd/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/libros/se-anuncia-un-asasinato/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/libros/tres-ratones-ciegos/</loc>
     <lastmod>2024-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/informatica/ver_ultimas_conexiones_rdp/</loc>
     <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/libros/victor-lukdary/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2024-01-18/</loc>
+    <lastmod>2024-01-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-12-24/</loc>
+    <lastmod>2023-12-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-12-20/</loc>
+    <lastmod>2023-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-12-19/</loc>
+    <lastmod>2023-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-12-10/</loc>
+    <lastmod>2023-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-12-07/</loc>
+    <lastmod>2023-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-12-03/</loc>
+    <lastmod>2023-12-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-30/</loc>
+    <lastmod>2023-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-28/</loc>
+    <lastmod>2023-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-24/</loc>
+    <lastmod>2023-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-23/</loc>
+    <lastmod>2023-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-21/</loc>
+    <lastmod>2023-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-20/</loc>
+    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-19/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-18/</loc>
+    <lastmod>2023-11-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-05/</loc>
+    <lastmod>2023-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-04/</loc>
+    <lastmod>2023-11-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blogue/2023-11-03/</loc>
+    <lastmod>2023-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url>
