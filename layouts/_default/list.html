@@ -16,6 +16,7 @@
     <!-- Tags will be injected by JS if we keep the JS logic, or we can pre-render categories here. 
            For now, let's keep the user's specific blog layout style. -->
 </div>
+<script src="{{ " js/blog-filter.js" | relURL }}"></script>
 <section class="blog-entradas">
     {{ range .Pages.ByDate.Reverse }}
     <article id="{{ .Date.Format " 02/01/2006" }}" class="card mb-4 rounded shadow-sm border mx-3">

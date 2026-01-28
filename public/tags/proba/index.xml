@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proba on HUGO.GAL</title>
+    <link>http://localhost:1313/tags/proba/</link>
+    <description>Recent content in Proba on HUGO.GAL</description>
+    <generator>Hugo</generator>
+    <language>gl-ES</language>
+    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/proba/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>26/01/2026</title>
+      <link>http://localhost:1313/blogue/2026-01-26-proba/</link>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogue/2026-01-26-proba/</guid>
+      <description>&lt;p&gt;Esta mensaxe é de proba para ver se todo funciona ben. Espero que sí :) Apertas.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

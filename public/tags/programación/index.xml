@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/blogue/2026-01-28-reflexion/</guid>
       <description>&lt;p&gt;Teño un montón de proxectos a medias pero é que non teño gañas de poñerme con ningún.&#xA;O que máis me preocupa é unha aventura conversacional que fixen con Godot. Creo que fixen a parte más difícil pero agora que me queda o máis sinxelo, non teño gañas de rematala. Quizáis sexa por falta de desafíos.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>27/01/2026</title>
+      <link>http://localhost:1313/blogue/2026-01-27-migracion/</link>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogue/2026-01-27-migracion/</guid>
+      <description>&lt;p&gt;Veño de migrar toda a páxina personal ao CMS Hugo (moi apropiado) espero que todo esté funcionando ben.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
