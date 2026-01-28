@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<article class="bg-white p-4 rounded shadow-sm border mx-3">
+    <header class="mb-4">
+        <h1>{{ .Title }}</h1>
+    </header>
+
+    <div class="space-y-4 text-gray-700 leading-relaxed">
+        {{ .Content }}
+    </div>
+
+    {{ if .Params.meta }}
+    <div class="mt-6 border-t pt-4 text-sm text-gray-600">
+        <ul class="space-y-1">
+            {{ range $key, $value := .Params.meta }}
+            <li><strong>{{ $key | humanize }}:</strong> {{ $value }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+</article>
+
+{{ end }}

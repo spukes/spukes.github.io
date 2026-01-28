@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="gl-ES">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta name="description" content="Tutorial para ver os usuarios que se conectaron por RDP a un servidor Windows usando PowerShell.">
+    
+
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/informatica/ver_ultimas_conexiones_rdp/">
+    <meta property="og:title" content="Ver as últimas conexións feitas por RDP a un servidor | HUGO.GAL">
+    <meta property="og:description"
+        content="Tutorial para ver os usuarios que se conectaron por RDP a un servidor Windows usando PowerShell.">
+
+    
+    <meta property="og:image" content="http://localhost:1313/img/card-default.png">
+
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://localhost:1313/informatica/ver_ultimas_conexiones_rdp/">
+    <meta property="twitter:title" content="Ver as últimas conexións feitas por RDP a un servidor | HUGO.GAL">
+    <meta property="twitter:description"
+        content="Tutorial para ver os usuarios que se conectaron por RDP a un servidor Windows usando PowerShell.">
+    <meta property="twitter:image" content="http://localhost:1313/img/card-default.png">
+
+    <title>Ver as últimas conexións feitas por RDP a un servidor | HUGO.GAL</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/%20css/custom.css" rel="stylesheet">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-powershell.min.js"></script>
+    
+</head>
+
+<body data-nav="informatica">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="http://localhost:1313/">HUGO.GAL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+            aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/">Inicio</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/blogue/">Blogue</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/informatica/">Informática</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/libros/">Libros</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="/cine/">Cine e series</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <main class="container my-5">
+        
+
+<article class="bg-white p-4 rounded shadow-sm border mx-3">
+    <header class="mb-4">
+        <h1>Ver as últimas conexións feitas por RDP a un servidor</h1>
+    </header>
+
+    <div class="space-y-4 text-gray-700 leading-relaxed">
+        <p>As veces pode ser interesante saber quen se conectou por última vez a un servidor por RDP (Escritorio Remoto) e para iso podemos lanzar este script por Powershell:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$RDPAuths = Get-WinEvent -LogName <span style="color:#e6db74">&#39;Microsoft-Windows-TerminalServices-RemoteConnectionManager/Operational&#39;</span> -FilterXPath <span style="color:#e6db74">&#39;&lt;QueryList&gt;&lt;Query Id=&#34;0&#34;&gt;&lt;Select&gt;*[System[EventID=1149]]&lt;/Select&gt;&lt;/Query&gt;&lt;/QueryList&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#66d9ef">xml[]</span>]$xml=$RDPAuths|<span style="color:#66d9ef">Foreach</span>{$_.ToXml()}
+</span></span><span style="display:flex;"><span>$EventData = <span style="color:#66d9ef">Foreach</span> ($event <span style="color:#66d9ef">in</span> $xml.Event)
+</span></span><span style="display:flex;"><span>{ New-Object PSObject -Property @{
+</span></span><span style="display:flex;"><span>TimeCreated = (Get-Date ($event.System.TimeCreated.SystemTime) -Format <span style="color:#e6db74">&#39;yyyy-MM-dd hh:mm:ss K&#39;</span>)
+</span></span><span style="display:flex;"><span>User = $event.UserData.EventXML.Param1
+</span></span><span style="display:flex;"><span>Domain = $event.UserData.EventXML.Param2
+</span></span><span style="display:flex;"><span>Client = $event.UserData.EventXML.Param3
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>} $EventData | FT | select -First <span style="color:#ae81ff">20</span>
+</span></span></code></pre></div>
+    </div>
+
+    
+</article>
+
+
+    </main>
+
+    <footer class="text-center py-3 bg-light">
+    HUGO.GAL dende 2023 - <a rel="me" href="https://mastodon.gal/@Hugo">Mastodon</a>
+</footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

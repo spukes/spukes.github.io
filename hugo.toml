@@ -1,0 +1,37 @@
+baseURL = 'https://hugo.gal/'
+languageCode = 'gl-ES'
+title = 'HUGO.GAL'
+theme = []
+
+[params]
+  description = "Páxina persoal de Hugo.gal. Informática, libros, cine e moito máis."
+  author = "Hugo"
+  # Default image for Open Graph
+  defaultImage = "/img/card-default.png"
+
+[menu]
+  [[menu.main]]
+    identifier = "inicio"
+    name = "Inicio"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "blogue"
+    name = "Blogue"
+    url = "/blogue/"
+    weight = 20
+  [[menu.main]]
+    identifier = "informatica"
+    name = "Informática"
+    url = "/informatica/"
+    weight = 30
+  [[menu.main]]
+    identifier = "libros"
+    name = "Libros"
+    url = "/libros/"
+    weight = 40
+  [[menu.main]]
+    identifier = "cine"
+    name = "Cine e series"
+    url = "/cine/"
+    weight = 50

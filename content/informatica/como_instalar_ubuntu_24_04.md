@@ -1,0 +1,55 @@
+---
+title: "Como instalar Ubuntu 24.04"
+date: 2024-05-01
+description: "Guía paso a paso para a instalación de Ubuntu 24.04 Desktop para principiantes."
+image: "/informatica/img/instalacion_ubuntu24/2.png"
+---
+
+Pasos para instalar Ubuntu 24.04:
+
+O primeiro que temos que facer é descargar a ISO dende a páxina de Ubuntu:
+* [Páxina de descargas de Ubuntu](https://ubuntu.com/download/desktop)
+
+Unha vez que temos a ISO descargada temos duas opcións: ou ben a instalamos nunha computadora que non teña sistema operativo, ou teña un sistema operativo Windows (neste caso, Ubuntu detectaráno e poderás instalarlo ao seu carón) ou tamén podes facerte unha máquina virtual con VirtualBox, por exemplo, e instalarlo virtualmente sen tocar o teu sistema operativo actual.
+
+Neste tutorial vou dar por feito que sabes como arrancar a túa computadora dende unha ISO, ven por USB ou ben por DVD modificando a orde de arranque na BIOS. Intentarei facer un tutorial para iso no futuro.
+
+Unha vez que o ordenador esté arrancado dende a ISO que descargamos da páxina de Ubuntu, aparecerá o menú para facer a instalación:
+
+![Menú de arranque de Ubuntu 24.04](/informatica/img/instalacion_ubuntu24/1.png)
+
+Escollemos a primeira opción e nos cargará Ubuntu de xeito que podamos probalo antes de facer a instalación. Hai que decir que o rendimento do sistema que teñamos nesta proba non será tan boa coma se estivese realmente instalado.
+
+Agora faremos clic no botón de Install Ubuntu que tendremos diante. Pode ser nunha xanela ou nunha icona do escritorio.
+
+![Botón de instalación no escritorio de Ubuntu](/informatica/img/instalacion_ubuntu24/2.png)
+
+Aquí empeza a instalación do sistema. O primeiro será escoller o noso idioma, que no noso caso será o galego.
+
+Despois teremos opciónes de accesibilidade. Por se precisamos axudas visuais, sonoras, etc... Activamos as opcións que precisemos e podemos pulsar en Next para continuar.
+
+O seguinte paso é seleccionar o idioma do teclado. Se estás lendo isto entendemos que o teu teclado é Español. Se non fora o caso, escolle da lista a tua opción e preme Next.
+
+Agora podemos seleccionar a nosa conexión a internet. Pode ser wifi ou por cable. Se é wifi escollemos esa opción e pediranos a clave da Wifi. Se vai por cable escolleremos a opción Wired connection se prememos Next. También temos a opción de non conectalo a internet polo momento.
+
+A seguinte pantalla e para facer a instalación do sistema ou para probalo. Se decidimos probalo sen instalarlo saldrá unha pantalla coma o que vimos ao comezo de todo onde podemos probar o sistema sen modificar o noso disco duro. O obxectivo deste manual e facer a instalación así que prememos en Install Ubuntu.
+
+Agora debemos escoller se queremos facer unha instalación interactiva ou automática. Neste caso queremos ver todas as opcións que nos proporcionan así que escolleremos a opción Interactiva. Se non queres complicarte a vida e que o sistema se instale do xeito máis doado, podes escoller aquí a opción Automated Installation. Coma dixen, neste tutorial seguiremos con Interactive Installation.
+
+Agora da opción de instalar programas durante a instalación. A Default Selection instala as aplicacións básicas e un navegador web. Porén, a Extended selection instalará a maiores outras aplicacións de oficina, utilidades avanzadas, etc. Preme a opción que queiras.
+
+Por defecto, Ubuntu non instala aplicacións propietarias. Pero nesta pantalla agora permíteche instalalas. Refírese, sobre todo, a controladores para dispositivos wifi ou os controladores de placas de vídeo de Nvidia. Tamén para ser quen de reproducir videos en formato MOV e outros. Escolle as opcións que máis che conveñan e preme Next.
+
+O seguinte paso é como modificar o disco duro para instalar Ubuntu. Se queres ir ao doado, escolle Erase disk and install Ubuntu e preme Next.
+
+Unha mellor opción é premer en Advanced Features e escoller a opción use LVM (con encriptación se queres seguridade) Esto permitirá que sexa máis doado modificar e ampliar as particións no futuro. Neste tutorial escolleremos Manual Installation. No meu caso, dexeino coma na imaxe:
+
+![Configuración manual de particións en Ubuntu 24.04](/informatica/img/instalacion_ubuntu24/3.png)
+
+Prememos Next e completamos o formulario cos nosos datos: nome de usuario, contrasinal, nome do equipo...
+
+Logo vai o HUSO horario que nos toque. No meu caso EUROPE/MADRID
+
+Na última pantalla vai un pequeno resumo de todas as opcións que escollemos por se queremos cambiar algo. Prememos Install e facemos a instalación.
+
+Neste punto da instalación, a miña instalación de proba nunha máquina virtual non foi quen de avanzar e sempre quedaba atascado. Porén, confío en que a tua instalación fora ben, chegue ao final onde pide un reinicio e podas disfrutar do teu novo sistema operativo Ubuntu 24

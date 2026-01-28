@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+            aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a class="nav-link {{ if or ($currentPage.IsMenuCurrent " main" .)
+                        ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL | relURL }}">{{ .Name
+                        }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,104 @@
+{{ define "main" }}
+
+{{ if .Title }}
+<h1>{{ .Title }}</h1>
+{{ end }}
+
+{{ if .Content }}
+<div class="mb-5">
+    {{ .Content }}
+</div>
+{{ end }}
+
+{{/* Specific logic for Blog section with badges filter */}}
+{{ if eq .Section "blogue" }}
+<div id="tag-filter-container" class="mb-4">
+    <!-- Tags will be injected by JS if we keep the JS logic, or we can pre-render categories here. 
+           For now, let's keep the user's specific blog layout style. -->
+</div>
+<section class="blog-entradas">
+    {{ range .Pages.ByDate.Reverse }}
+    <article id="{{ .Date.Format " 02/01/2006" }}" class="card mb-4 rounded shadow-sm border mx-3">
+        <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+                <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center me-2"
+                    style="width: 36px; height: 36px;">
+                    🗓️
+                </div>
+                <h5 class="card-title mb-0 fw-bold">{{ .Title }}</h5>
+                <!-- Using Title as Date per user's old format, or Date -->
+            </div>
+            <div class="card-text text-muted">
+                {{ .Content }}
+                <!-- Note: In Hugo list templates, .Content is the page content. 
+                 If we put the post body in the markdown content, it shows here. -->
+            </div>
+        </div>
+        <div class="text-end mt-3 p-3 pt-0">
+            {{ range .Params.tags }}
+            <span class="badge bg-light text-secondary">#{{ . }}</span>
+            {{ end }}
+        </div>
+    </article>
+    {{ end }}
+</section>
+
+{{/* Logic for Informatica (Tutorials list) */}}
+{{ else if eq .Section "informatica" }}
+<h2>Artigos de informática</h2>
+<menu>
+    {{ range .Pages }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+</menu>
+
+{{/* Hardcoded external links from old index.html - ideally these move to a data file or _index.md content */}}
+<h2>Programas e xogos</h2>
+<menu>
+    <li>U-la Carmela? Viaxa por toda a Galiza para atopar a Carmela e salvar o cocido. <a
+            href="https://trevizer.itch.io/u-la-carmela">Enlace</a></li>
+    <li>RythmMaker: Un programa para crear ritmos musicais. <a href="https://trevizer.itch.io/rythmmaker">Enlace</a>
+    </li>
+    <li>Escape Espacial 1: Unha aventura conversacional con gráficos pixelart. (ESP) <a
+            href="https://trevizer.itch.io/escape-espacial-i">Enlace</a></li>
+    <li>Space Gauntlet. Un boceto de videoxogo inspirado no Gauntlet (1985) <a
+            href="https://trevizer.itch.io/space-gauntlet">Enlace</a></li>
+    <li>Demasiado Larga. Un xogo para unha jam feito nun fin de semana. <a
+            href="https://trevizer.itch.io/demasiado-larga-medieval">Enlace</a></li>
+</menu>
+
+<p>En xeral podes ver as miñas cousas:
+<menu>
+    <li><a href="https://trevizer.itch.io/">Páxina de itch.io</a></li>
+    <li><a href="https://codeberg.org/Trevizer/">Páxina de Codeberg</a></li>
+    <li><a href="https://play.google.com/store/apps/developer?id=Hugo+Alexandre">Aplicacións na Play Store</a></li>
+</menu>
+</p>
+
+{{/* Logic for Reviews (Libros/Cine) */}}
+{{ else }}
+{{ range .Pages }}
+<article id="{{ .File.TranslationBaseName }}" class="bg-white p-4 rounded shadow-sm border mx-3 mb-4">
+    <header class="mb-4">
+        <h2 class="text-2xl font-semibold text-gray-800"><a href="{{ .RelPermalink }}"
+                style="color:inherit; text-decoration:none">{{ .Title }}</a></h2>
+    </header>
+    <div class="space-y-4 text-gray-700 leading-relaxed">
+        {{ .Content }}
+    </div>
+
+    {{ if .Params.meta }}
+    <div class="mt-6 border-t pt-4 text-sm text-gray-600">
+        <ul class="space-y-1">
+            {{ range $key, $value := .Params.meta }}
+            <li><strong>{{ $key | humanize }}:</strong> {{ $value }}</li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+
+</article>
+{{ end }}
+{{ end }}
+
+{{ end }}
